@@ -1,0 +1,14 @@
+= Changes for the libusbx &rarr; libusb mergeback =
+
+=== DNS ===
+* http://libusb.info -> main site
+* http://log.libusb.info -> github Changelog
+* http://api.libusb.info -> SF API pages
+* http://mailing-list.libusb.info -> SF mailing list page
+* http://windows.libusb.info -> Windows wiki page
+
+=== Misc. ===
+* Set a roadmap task that coincides with the libusbx one
+* What do we want to do about LIBUSBX_API_VERSION?
+* Do we want to sanitize the libusbx refs in the ChangeLog?
+
