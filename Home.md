@@ -1,1 +1,124 @@
-Welcome to the libusb wiki!
+[[libusbx-160.png]]
+
+<big>'''A cross-platform user-mode library, for generic access to USB devices'''</big>
+
+= Description =
+== About ==
+
+'''libusb''' is a cross-platform user-mode library that provides access to USB devices.
+
+== Features ==
+
+* Supports all the major platforms: Linux, OS X, OpenBSD/NetBSD and Windows
+* Supports all versions of USB, from 1.0 to 3.0
+* Unified modern API, that provides both synchronous and asynchronous access
+* User-mode: no need for kernel access
+
+= Downloads =
+
+libusb releases can be accessed from the [http://sourceforge.net/projects/libusb/files/releases releases] directory.
+
+= Documentation =
+
+* The libusb-1.0 API Reference can be accessed [http://libusb.sourceforge.net/api-1.0/ HERE]
+* A [[FAQ|FAQ]] is also available.
+
+= Support =
+The preferred way to get support is to use the mailing list. The libusb mailing-list is hosted on Sourceforge. You can subscribe and check the archive [https://lists.sourceforge.net/lists/listinfo/libusb-devel HERE].
+
+For your convenience, [http://libusb.6.n5.nabble.com/LibUSB-Dev-f7.html Nabble], [http://marc.info/?l=libusb-devel&r=1&w=2 marc.info] or [http://news.gmane.org/gmane.comp.lib.libusb.devel.general Gmane] may provide a more user-friendly version of the mailing list archives.
+
+You are also encouraged to check the [https://github.com/libusb/libusb/wiki/_pages Wiki Pages] for topics of interest.
+
+= Development =
+
+== Supported Environments ==
+
+* Linux &#91;'''status''': Stable&#93;
+** Any modern Linux system with <code>usbfs</code>.
+** Note: for USB 3.0 port, the Linux xHCI driver is less mature than the other host drivers. So there may be issues with USB 3.0 port. Please report to the mailing list for issues related to USB 3.0.
+* Mac OS X &#91;'''status''': Stable&#93;
+** Any modern version of Mac OS X (PowerPC or x86 either in 32 and 64 bits)
+** Note: for USB 3.0 port,please use Mac OS X Mountain Lion 10.8.2 or later.
+** Note: the device should not be bound to a kernel driver. You can use a codeless kext to achieve that if there is a kernel driver (eg: HID or USB Mass Storage) which already binds to the device.
+* [[Windows-Backend|Windows]] &#91;'''status''': EXPERIMENTAL &rarr; Stable&#93;
+** [http://www.mingw.org MinGW] (32 bit) or [http://mingw-w64.sourceforge.net/ MinGW-w64]. To compile a library that is both 32 and 64 bit compatible, you should use a version of MinGW-w64 that supports both <code>-m32</code> and <code>-m64</code> (a.k.a. "multilib"). A pre-built multilib version can be downloaded with [http://tdm-gcc.tdragon.net/download TDM64].
+** Microsoft Visual C++ (Visual Studio).
+** [http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=36a2630f-5d56-43b5-b996-7633f2ec14ff Windows DDK build environment]
+** Device driver support: WinUSB, HID, libusb-win32 (libusb0.sys) and libusbK.
+* OpenBSD and NetBSD &#91;'''status''': EXPERIMENTAL&#93;
+** Only device with <code>ugen</code> driver are supported
+
+More information on the Windows implementation can be obtained from the '''[[Windows-Backend|Windows Backend]]''' page.
+
+Note:
+FreeBSD 8 and above include a FreeBSD-specific reimplementation of the libusbx/libusb API, so your applications will probably work there too. The source code for this library can be found [http://svn.freebsd.org/viewvc/base/head/lib/libusb/ here].
+
+If you are interested in porting to other platforms, the [https://github.com/libusb/libusb/blob/master/PORTING PORTING] file tells you where to start. We are more than happy to help out here, please write to the mailing list with your questions and feedback.
+
+== Accessing the Source ==
+
+The latest development tree is always available from [http://git-scm.com/ git].
+
+For those not familiar with git, here are the commands one can use to retrieve '''libusb''':
+<pre>
+# retrieve development branch (this only needs to be done once)
+git clone git://github.com/libusb/libusb.git
+cd libusb
+</pre>
+
+<pre>
+# for further updates, once the clone has been done
+git pull                                                           
+</pre>
+
+You can also browse the git development tree from [https://github.com/libusb/libusb].
+
+When compiling from git, remember that you may have to run <code>./autogen.sh</code>, <code>./bootstrap.sh</code> or run the autotools creation utilities, in order to have <code>configure</code> and <code>Makefile</code> created for you. The difference between <code>autogen.sh</code> and <code>bootstrap.sh</code> is that the former will invoke configure with a set of default options, whereas the latter will not.
+
+To create projects relying on '''libusb''', please refer to the samples in the <code>examples/</code> subdirectory.
+
+= Open Source projects using libusb =
+
+* [http://www.reactivated.net/fprint/wiki/ libfprint fingerprint scanning] ``http://cgit.freedesktop.org/libfprint``
+* [http://git.tuxfamily.org/microdiausp/microdiauserspace.git Microdia] Microdial webcam driver with uses isochronous I/O
+* [https://github.com/atty303/tsniff Some Japanese smart card thingy: tsniff] and [https://members.fsij.org/trac/soc2008/wiki/RUF2-HSC-W its usage]
+* [http://code.google.com/p/coldsync/source/browse/trunk/coldsync-ppp/coldsync-ppp.c coldsync-ppp]
+* [https://sourceforge.net/scm/?type=git&group_id=8157 libdc1394-2] (uses isochronous I/O)
+* [http://www.xdimax.com/sub20/sub20.html#DLD Dimax SUB-20]
+* [http://qdot.github.com/libnifalcon/ libnifalcon] 
+* [http://developer.intra2net.com/git/?p=libftdi-1.0 libftdi-1.0] 
+* [http://www.sane-project.org/ SANE] - Scanner Access Now Easy
+* [http://usbpicprog.org/ UsbPicProg] - Open source and open hardware USB PIC programmer
+* [http://sigrok.org Sigrok] - Open source logic analyzer software for various USB logic analyzer hardware
+* [http://xpiocards.sourceforge.net/ xpiocards]
+* [http://marcansoft.com/blog/iphonelinux/usbmuxd/ usbmuxd] USB Multiplex Daemon for iPhone and iPod Touch
+* [http://urjtag.org/ UrJTAG] Universal JTAG Library
+* [http://labjack.com/support/linux-and-mac-os-x-drivers Exodriver] Open source driver for Labjack data acquisition devices
+* [http://code.google.com/p/btstack/ btstack] A Portable User-Space Bluetooth Stack
+* [http://code.google.com/p/madwimax/ madwimax] Linux driver for mobile WiMAX devices
+* [https://github.com/gregkh/usbutils usbutils] USB utilities for Linux, includes the usb.ids file and lsusb
+* [https://github.com/Yubico/yubikey-personalization Yubikey personalization] Yubikey personalization cross-platform library and tool 
+* [http://openkinect.org/ Openkinnect libfreenect] Cross-platfrom drivers and libraries for the Microsoft Xbox Kinect device
+* [http://ettus-apps.sourcerepo.com/redmine/ettus/projects/uhd/wiki Ettus uhd] Cross-platform universal hardware driver for Ettus Research products
+* [http://www.openni.org/ OpenNI] Open source OpenNI framework
+
+= Language Bindings =
+
+* Haskell bindings: [http://hackage.haskell.org/cgi-bin/hackage-scripts/package/bindings-libusb Low level], [http://hackage.haskell.org/cgi-bin/hackage-scripts/package/usb-0.1 high level]
+* [http://github.com/larskanis/libusb libusb for Ruby]
+* [http://pyusb.wiki.sourceforge.net/ pyusb for Python]
+* [http://libusbdotnet.sourceforge.net/ libusbdotnet for C#, DotNet and Mono]
+* [http://bitpim.svn.sourceforge.net/viewvc/bitpim/trunk/bitpim/src/native/usb/ partial python wrapper using swig]
+* [http://github.com/vpelletier/python-libusb1 python-libusb1, simple Python wrapper]
+* [http://github.com/jteeuwen/go-pkg-usb Go libusb-1.0 wrapper]
+* [https://github.com/schakko/node-usb node.js libusb-1.0 binding]
+* [https://forge.ocamlcore.org/projects/ocaml-usb/ OCaml libusb-1.0 binding]
+* [https://github.com/littledan/Factor/tree/master/extra/libusb Fator libusb-1.0 binding]
+* [https://bitbucket.org/doub/luausb/overview lua libusb-1.0 binding]
+
+= Other Resources =
+
+* '''[[Maintainers'-Corner|Maintainers' Corner]]'''
+----
+<center>[[CC_BY-SA.png|link=http://creativecommons.org/licenses/by-sa/3.0/]]</center>
