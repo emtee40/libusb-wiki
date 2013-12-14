@@ -2,7 +2,7 @@
 
 == Licensing ==
 
-=== What license does libusb use? ===
+=== What is the libusb license? ===
 
 libusb is released under version 2.1 of the [http://www.gnu.org/licenses/lgpl-2.1.html GNU Lesser General Public License (LGPL)].
 
@@ -25,7 +25,8 @@ You have to [https://lists.sourceforge.net/lists/listinfo/libusb-devel subscribe
 
 === Can I run libusb applications on Linux without root privilege? ===
 
-Yes you can! The standard solution is to use udev rules. Here are some links to udev related websites.
+Yes.<br/>
+The standard solution is to use udev rules. Here are some links to udev related websites.
 * [http://www.kernel.org/pub/linux/utils/kernel/hotplug/udev/udev.html udev homepage ]
 * [http://wiki.debian.org/udev Debian's udev overview]
 * [http://www.reactivated.net/udevrules.php Writing udev rules]
@@ -33,33 +34,37 @@ Yes you can! The standard solution is to use udev rules. Here are some links to 
 
 === Can libusb be used on the USB device side, e.g. Linux Gadget Device? ===
 
-No. Libusb only provides an API for writing software on the host. Of course, if the device also acts as a USB host then libusb could still be useful, but only for the host part of the device.
+No.<br/>
+libusb only provides an API for writing software on the host. Of course, if the device also acts as a USB host then libusb could still be useful, but only for the host part of the device.
 
 === Can I use libusb to open a file on an USB storage device? ===
 
-Yes, libusb can be used for low-level communication with USB Mass Storage Class devices. But in order to access a file on such a device you must first implement Mass Storage Class, SCSI and the particular filesystem used on the device, most commonly <code>FAT32</code>. 
+Yes.<br/>
+libusb can be used for low-level communication with USB Mass Storage Class devices. But in order to access a file on such a device you must first implement Mass Storage Class, SCSI and the particular file system used on the device, most commonly <code>FAT32</code>. 
 
-Libusb will not do this part for you, but you can find a limited example of how to read a data block through Mass Storage using libusb in the mass_storage test from the [https://github.com/libusb/libusb/blob/master/examples/xusb.c ​xusb.c] sample of the the ​libusb distribution.
+However, libusb will not do this part for you. But you can find a limited example of how to read a data block through Mass Storage using libusb in the mass_storage test from the [https://github.com/libusb/libusb/blob/master/examples/xusb.c ​xusb.c] sample of the the ​libusb distribution.
 
 === Does libusb support USB 3.0? ===
 
-Absolutely, as long as the underlying OS supports USB 3.0 too. 
+Yes (as long as the underlying OS supports USB 3.0 too).
 
-=== What should I do if I find that my device works well when plugged on an USB 2.0 port but not on an USB 3.0 one? ===
+=== My device works when plugged on an USB 2.0 port but not on an USB 3.0 one ===
 
-With USB 3.0 being fairly new, some systems are still catching up.
+If you encounter such an issue, you should report it to the libusb mailing-list.
 
-For instance, USB 3.0 support for Windows 7 and earlier is very dependent on individual drivers (not provided by Microsoft), since only Windows 8 has an official USB 3.0 stack from Microsoft.
+But please note that USB 3.0 is fairly new, so some Operating Systems are still catching up.
+
+For instance, USB 3.0 support for Windows 7 and earlier is very dependent on individual drivers, which are provided by the USB controller manufacturer, and not Microsoft. Some of these have been known to have bugs. Only Windows 8 and later has an official USB 3.0 stack that originates from Microsoft.
 
 For Linux, the xHCI driver is also not as mature as the other host controller driver.
 
-And for Mac OS X, xHCI support has only been introduced recently with Mac OS X Mountain Lion, so USB 3.0 support may not be that mature either.
+For Mac OS X, xHCI support has only been introduced recently with Mac OS X Mountain Lion, so USB 3.0 support may not be that mature either.
 
-Still we will try to help sort issues related to USB 3.0 usage if we can, but before you contact us, please make sure you test with the latest USB 3.0 drivers available from your xHCI provider on Windows, or on Linux, with the latest kernel, as the xHCI driver is constantly being updated there.
+We will try to help you sort issues related to USB 3.0 usage where possible. But before you contact us, if on Windows 7, please make sure you test with the latest USB 3.0 drivers available from your xHCI provider, or, if on Linux, please make sure you test with the latest kernel, as the xHCI driver is regularly being updated there.
 
 === Does libusb support HID devices? ===
 
-libusb does try to support HID devices where possible, but this support, and the ease of access to HID devices depends on the platform you will be running libusb on. 
+libusb does try to support HID devices where possible. However, the level of support, as well as the ease of access of HID devices, depends on the platform you will be running libusb on. 
 
 On Linux, you must detach the kernel HID driver for libusb to communicate with the device, but the libusb API can do this for you. If you have a relevant udev rule, you should also be able to perform that operation without requiring root privileges. 
 
@@ -80,9 +85,10 @@ Windows RT is locked by Microsoft, which means that users cannot install the app
 
 No.
 
-=== Does libusb support under Android ===
+=== Does libusb support Android ===
 
-Yes, provided your device has USB host support (also known as USB On-The-Go) and sufficient privileges to run in host mode (which usually requires a "rooted" device).
+Yes.</br>
+However, this will only work if your device has USB host support (also known as USB On-The-Go) and if you have sufficient privileges to run in host mode (which usually requires a "rooted" device).
 Please check the [https://github.com/libusb/libusb/tree/master/android android] directory for more info.
 
 ----
