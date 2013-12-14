@@ -1,4 +1,4 @@
-[[libusbx-160.png]]
+[[logo-160.png]]
 
 <big>'''A cross-platform user-mode library, for generic access to USB devices'''</big>
 
