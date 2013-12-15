@@ -7,6 +7,9 @@
 * http://mailing-list.libusb.info -> SF mailing list page
 * http://windows.libusb.info -> Windows wiki page
 
+=== Files ===
+* Upload the tarballs and Windows binaries to the SF libusb repo (should we try to change the cumbersome directory structure?)
+
 === Misc. ===
 * Set a roadmap task that coincides with the libusbx one
 * What do we want to do about LIBUSBX_API_VERSION?
