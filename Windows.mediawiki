@@ -1,0 +1,80 @@
+'''IMPORTANT''': NEC/Renesas uPD720200/uPD720200A USB 3.0 users, please upgrade your drivers to [http://www.station-drivers.com/page/renesas.htm version 2.1.16.0 or later]. Older versions of the driver have [http://marc.info/?l=libusb-devel&m=130934450111495&w=2 a bug] that prevents libusb from accessing devices. uPD720201/uPD720202 users should use version 3.x (3.0.23 or later preferred).
+
+== Overview ==
+=== About ===
+
+This project adds Windows platform support to the '''[[Home|libusb]]''' Open Source library, in order to help developers easily communicate with USB devices on Windows.
+Currently it supports the [http://msdn.microsoft.com/en-us/library/windows/hardware/ff540207.aspx WinUSB] and HID drivers for generic USB device access as well as the [https://sourceforge.net/apps/trac/libusb-win32/wiki libusb-win32] and [https://sourceforge.net/projects/libusbk/ libusbK] drivers.
+
+=== Binary Snapshots ===
+
+Pre-built binary snapshots are provided in the [http://sourceforge.net/projects/libusb/files/releases/ release] directory under <code>/<current-version>/Windows/</code>.<br />
+These are provided AS IS for your convenience, generated for the following environments:
+
+* Microsoft Visual Studio and DDK/WDK &rarr; MS32(32 bit) and MS64 (64 bit) directories
+* MinGW -> MinGW32 (32 bit) and MinGW64 (64 bit) directories 
+
+Note that these archives are provided in the <code>7z</code> format so you may have to install ​[http://www.7-zip.org/ 7-zip].
+
+== Supported Environments ==
+
+Supported systems are all Windows platforms, starting with Windows XP, and including 64 bit versions, with the following exceptions:
+* Windows 2003 (Microsoft does not support WinUSB on 32bit/64bit Windows 2003)
+* Windows XP 64 bit (Microsoft does not officially support WinUSB on 64bit Windows XP)
+
+=== USB 3.0 Support ===
+
+libusb supports USB 3.0 controllers and devices on Windows. Proprietary vendor controller drivers for Windows 7 and earlier as well as the Microsoft controller xHCI driver for Windows 8 are supported. If you are not using Windows 8 or later, you will be using vendor driver. Make sure you upgrade to the latest version of the driver if you encounter problems. 
+
+If you are using a NEC/Renesas USB 3.0 controller, such as the fairly widespread <code>uPD720200</code>/<code>uPD720200A</code>, remember to make sure that your controller drivers are [http://www.station-drivers.com/index.php/10-drivers/42-renesas-nec version 2.1.16.0 or later]. Older versions of the drivers are known to have a bug that prevents access to USB devices.
+
+=== Windows 8.x Support ===
+
+libusb was tested under Windows 8 and Windows 8.1, for both 32 and 64 bit, and no issues were found.
+
+=== .NET support ===
+
+A <code>.NET</code> version of libusb, called [http://libusbdotnet.sourceforge.net/V2/Index.html LibUsbDotNet], based on libusb 1.0, has been developed by Travis Robinson. If you plan to use libusb in a <code>.NET</code> project, make sure you check [http://libusbdotnet.sourceforge.net] or [http://sourceforge.net/projects/libusbdotnet/]
+
+== How to use libusb on Windows ==
+
+=== Driver Installation ===
+
+If your target device is not HID, you __must__ install a driver before you can communicate with it using libusb. Currently, this means installing one of Microsoft's <code>WinUSB</code>, [http://sourceforge.net/apps/trac/libusb-win32/wiki libusb-win32] or [http://code.google.com/p/usb-travis/ libusbK] drivers. Two options are available:
+* '''Recommended''': Use the most recent version of '''[http://zadig.akeo.ie Zadig]''', an Automated Driver Installer GUI application for <code>WinUSB</code>, <code>libusb-win32</code> and <code>libusbK</code>...
+* Alternatively, if you are only interested in <code>WinUSB</code>, you can download the [http://libusb-winusb-wip.googlecode.com/files/winusb%20driver.zip WinUSB driver files] and customize the <code>inf</code> file for your device.
+
+Note that if you install the libusb-win32 driver manually, you will also need to install the libusbK DLL, as all libusb-win32 accesses are done through it. One way to install/update libusbK.dll is to install libusbk development kit (libusbK-x.x.x.x-setup.exe from [http://sourceforge.net/projects/libusbk/ Sourceforge site] and choose to update the system files during the installation. 
+
+=== Development Considerations ===
+
+The handling of composite devices under Windows is done with multiple drivers, that are children of the <code>usbccgp.sys</code> driver (Composite Generic Parent), as this is the default for the OS. For more info, see ''"2. How Windows handles a composite device"'' at [http://forum.silabs.com/ubbthreads.php?ubb=showflat&Number=39797]. If needed, it is also possible to replace the composite parent driver to access the device.
+
+Because Windows does not provide a native <code>poll()</code> function, and cygwin is the only development environment that provides such a call, the use of libusb file descriptors with <code>poll()</code> on cygwin is '''NOT''' supported. In a future version of libusb, we should provide better handling of native Windows events, but this will require a redesign of the libusb API, so it probably won't occur before libusb 2.0.
+
+=== Known Restrictions ===
+
+* <code>WinUSB</code> cannot be used to send an actual reset command to an USB device. This is a limitation of WinUSB. 
+* <code>WinUSB</code> and <code>libusbK</code> cannot be used to set a device configuration that is [http://msdn.microsoft.com/en-us/library/windows/hardware/ff537060.aspx different from the first one]. This is a limitation of KMDF USB I/O Target. 
+* <code>WinUSB</code> does not support multiple concurrent applications (as per the [http://msdn.microsoft.com/en-us/library/windows/hardware/ff540215.aspx MSDN documentation]).
+* <code>WinUSB</code> does not support isochronous transfers.
+* With <code>WinUSB</code>, when <code>LIBUSB_RECIPIENT_INTERFACE</code> is used for the transfer, the <code>WinUSB</code> DLL forces the low byte of <code>wIndex</code> to the interface number, regardless of what you set it to. See http://www.lvr.com/forum/index.php?topic=331 for more details.
+* HID keyboards and mice cannot be accessed using the native HID driver as Windows reserves exclusive access to them.
+* Multiple HID top level collections are currently not supported (only the first top level collection will be used).
+* The HID Report Descriptors provided by libusb are recomposed and may present minor differences from the actual ones, as the Windows HID API does not allow to read them directly from the device.
+* Because there is no native <code>poll()</code> on Windows, the ability to return externally pollable file descriptors on Windows <code>libusb_get_pollfd()</code> returns an error.
+* If you use a composite device, and plan to install a libusb compatible driver for any of the interfaces, you should ensure that your driver package adds a Device Interface GUID in the registry, as proper enumeration of composite devices in libusb depends on it. This is typically achieved by adding something like the following in your inf:<br/><code>HKR,,DeviceInterfaceGUIDs,0x00010000,{12345678-1234-1234-1234-123456789ABC}</code><br> This is in particular a problem with libusb-win32's inf-wizard which will be deprecated by libusb-win32 project. Please use Zadig instead.
+* <code>libusb0.sys</code> access is done through the libusbK DLL, therefore, if you plan to use the libusb-win32/libusb0.sys driver in libusb, you must have that library installed. If using a recent version of Zadig, you should not have to do anything, at it will install the library for you.
+
+== Development Links ==
+
+* [http://msdn.microsoft.com/en-us/library/windows/hardware/ff540174.aspx How to Use WinUSB to Communicate with a USB Device] & [http://msdn.microsoft.com/en-us/library/windows/hardware/ff540283.aspx WinUSB (Winusb.sys) Installation].<br/>Note that the inf file given in the howto has a typo. If you don't change <code>SourceDisksFiles.NTamd64</code> to <code>SourceDisksFiles.amd64</code>, the driver installation will fail to copy the required DLLs on 64 bit systems...
+* [http://209.85.229.132/search?q=cache:3tk2Nqp0wfoJ:www.osronline.com/article.cfm%3Farticle%3D532+selecting+configuration+descriptor+winusb Using WinUSB for User-Mode to USB Device Communication]
+* [http://msdn.microsoft.com/en-us/library/ff540046.aspx#winusb WinUSB User-Mode Client Support Routines]
+* [http://blogs.msdn.com/usbcoreblog/ Microsoft's USB Core Team Blog] (including resources on instrumenting the USB stack in Windows 7)
+* [http://blogs.msdn.com/iliast/archive/2008/03/10/why-do-we-need-wdf-coinstallers.aspx additional] [http://blogs.msdn.com/iliast/archive/2009/08/13/wdf-logo-requirements-regarding-coinstallers.aspx information] about Windows Co-Installers
+* [http://msdn.microsoft.com/en-us/library/x98tx3cf.aspx Finding Memory Leaks Using the CRT Library]
+* [http://libusbk.sourceforge.net/UsbK3/index.html libusbK documentation]
+* [https://github.com/pbatard/libwdi/wiki libwdi/Zadig Wiki]
+----
+<center>[[CC_BY-SA.png|link=http://creativecommons.org/licenses/by-sa/3.0/]]</center>
