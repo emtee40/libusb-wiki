@@ -49,7 +49,7 @@ You are also encouraged to check the [https://github.com/libusb/libusb/wiki/_pag
 * OpenBSD and NetBSD &#91;'''status''': EXPERIMENTAL&#93;
 ** Only device with <code>ugen</code> driver are supported
 
-More information on the Windows implementation can be obtained from the '''[[Windows-Backend|Windows Backend]]''' page.
+More information on the Windows implementation can be obtained from the '''[[Windows|Windows Backend]]''' page.
 
 Note:
 FreeBSD 8 and above include a FreeBSD-specific reimplementation of the libusbx/libusb API, so your applications will probably work there too. The source code for this library can be found [http://svn.freebsd.org/viewvc/base/head/lib/libusb/ here].
