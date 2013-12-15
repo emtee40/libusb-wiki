@@ -42,7 +42,7 @@ Note however that the scripts are smart enough to tell you if you forgot to crea
 
 = Updating the Wiki content =
 * The github web interface is not the only way to edit the Wiki. All of the Wiki content can also be accessed as a git repository, which can be very convenient if you want to upload a new image, to be referenced on a wiki page.
-* To access the github wiki, just clone `git@github.com:libusb/libusb.wiki.git`.
+* To access the github wiki, just clone <tt>git@github.com:libusb/libusb.wiki.git</tt>.
 
 = Updating the project's pages on SF =
 * This shouldn't be needed, as the homepage is now updated from the <tt>libusb.github.com</tt> github project, but if you need to, see [https://sourceforge.net/apps/trac/sourceforge/wiki/Project%20web]
