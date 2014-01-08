@@ -14,4 +14,5 @@
 * Set a roadmap task that coincides with the libusbx one
 * What do we want to do about LIBUSBX_API_VERSION? Switch to LIBUSB_API_VERSION and have a #define '''[DONE]'''
 * Do we want to sanitize the libusbx refs in the ChangeLog? Some of them '''[DONE]'''
+* Setup the github -> mailing-list notification (How the heck did I do for libusbx that already?)
 
