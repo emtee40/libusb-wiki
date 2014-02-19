@@ -82,6 +82,7 @@ To create projects relying on '''libusb''', please refer to the samples in the <
 
 * [http://openocd.sourceforge.net/ OpenOCD] and other [http://www.intra2net.com/en/developer/libftdi/ libFTDI] based projects
 * [http://urjtag.org/ UrJTAG] - Universal JTAG Library
+* [http://www.cups.org/ CUPS] - An Open Source printing system
 * [http://www.sane-project.org/ SANE] - Scanner Access Now Easy
 * [https://github.com/gregkh/usbutils usbutils] - USB utilities for Linux
 * [http://sigrok.org sigrok] - A signal analysis software suite for a very large range of devices
