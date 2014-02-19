@@ -80,7 +80,7 @@ To create projects relying on '''libusb''', please refer to the samples in the <
 
 = Open Source projects using libusb =
 
-* [http://openocd.sourceforge.net/ OpenOCD] (through [http://www.intra2net.com/en/developer/libftdi/ libFTDI]
+* [http://openocd.sourceforge.net/ OpenOCD] and other [http://www.intra2net.com/en/developer/libftdi/ libFTDI] based projects
 * [http://urjtag.org/ UrJTAG] - Universal JTAG Library
 * [http://www.sane-project.org/ SANE] - Scanner Access Now Easy
 * [https://github.com/gregkh/usbutils usbutils] - USB utilities for Linux
@@ -96,8 +96,7 @@ To create projects relying on '''libusb''', please refer to the samples in the <
 * [http://cgit.sukimashita.com/usbmuxd.git/ usbmuxd] - A socket daemon to multiplex connections from and to iOS devices
 * [http://code.google.com/p/coldsync/source/browse/trunk/coldsync-ppp coldsync] - Palm OS synchronization utility
 * [https://github.com/atty303/tsniff tsniff] - ISDB-T smart card sniffer
-* [http://www.xdimax.com/sub20/sub20.html#DLD SUB-20] - Software for the Dimax SUB-20 
-Multi Interface USB Adapter
+* [http://www.xdimax.com/sub20/sub20.html#DLD SUB-20] - Software for the Dimax SUB-20 Multi Interface USB Adapter
 * [http://qdot.github.com/libnifalcon libnifalcon] - A driver for the Novint Falcon Haptic Device
 * [http://xpiocards.sourceforge.net/ XPIOCARDS] - A flight simulator interface
 * [http://labjack.com/support/linux-and-mac-os-x-drivers Exodriver] - Open Source drivers for Labjack data acquisition devices
