@@ -80,28 +80,30 @@ To create projects relying on '''libusb''', please refer to the samples in the <
 
 = Open Source projects using libusb =
 
-* [http://www.reactivated.net/fprint/wiki/ libfprint fingerprint scanning] ``http://cgit.freedesktop.org/libfprint``
-* [http://git.tuxfamily.org/microdiausp/microdiauserspace.git Microdia] Microdial webcam driver with uses isochronous I/O
-* [https://github.com/atty303/tsniff Some Japanese smart card thingy: tsniff] and [https://members.fsij.org/trac/soc2008/wiki/RUF2-HSC-W its usage]
-* [http://code.google.com/p/coldsync/source/browse/trunk/coldsync-ppp/coldsync-ppp.c coldsync-ppp]
-* [https://sourceforge.net/scm/?type=git&group_id=8157 libdc1394-2] (uses isochronous I/O)
-* [http://www.xdimax.com/sub20/sub20.html#DLD Dimax SUB-20]
-* [http://qdot.github.com/libnifalcon/ libnifalcon] 
-* [http://developer.intra2net.com/git/?p=libftdi-1.0 libftdi-1.0] 
+* [http://openocd.sourceforge.net/ OpenOCD] (through [http://www.intra2net.com/en/developer/libftdi/ libFTDI]
+* [http://urjtag.org/ UrJTAG] - Universal JTAG Library
 * [http://www.sane-project.org/ SANE] - Scanner Access Now Easy
-* [http://usbpicprog.org/ UsbPicProg] - Open source and open hardware USB PIC programmer
-* [http://sigrok.org Sigrok] - Open source logic analyzer software for various USB logic analyzer hardware
-* [http://xpiocards.sourceforge.net/ xpiocards]
-* [http://marcansoft.com/blog/iphonelinux/usbmuxd/ usbmuxd] USB Multiplex Daemon for iPhone and iPod Touch
-* [http://urjtag.org/ UrJTAG] Universal JTAG Library
-* [http://labjack.com/support/linux-and-mac-os-x-drivers Exodriver] Open source driver for Labjack data acquisition devices
-* [http://code.google.com/p/btstack/ btstack] A Portable User-Space Bluetooth Stack
-* [http://code.google.com/p/madwimax/ madwimax] Linux driver for mobile WiMAX devices
-* [https://github.com/gregkh/usbutils usbutils] USB utilities for Linux, includes the usb.ids file and lsusb
-* [https://github.com/Yubico/yubikey-personalization Yubikey personalization] Yubikey personalization cross-platform library and tool 
-* [http://openkinect.org/ Openkinnect libfreenect] Cross-platfrom drivers and libraries for the Microsoft Xbox Kinect device
-* [http://ettus-apps.sourcerepo.com/redmine/ettus/projects/uhd/wiki Ettus uhd] Cross-platform universal hardware driver for Ettus Research products
-* [http://www.openni.org/ OpenNI] Open source OpenNI framework
+* [https://github.com/gregkh/usbutils usbutils] - USB utilities for Linux
+* [http://sigrok.org sigrok] - A signal analysis software suite for a very large range of devices
+* [http://sdrsharp.com/ SDR#] (SDR Sharp) - A high performance Software Defined Radio application
+* [http://openkinect.org/ OpenKinect] - Library and appplications for the Microsoft Xbox Kinect device
+* [http://www.openni.org/ OpenNI] - An Open Source SDK for 3D sensing 
+* [http://code.google.com/p/btstack/ BTstack] - A Portable User-Space Bluetooth Stack
+* [http://usbpicprog.org/ UsbPicProg] - An Open Source PIC programmer
+* [http://www.freedesktop.org/wiki/Software/fprint/ fprint] - A fingerprint scanning application and library
+* [https://sourceforge.net/projects/libdc1394/ IIDC Camera Control Library] - Capture and control API for IIDC compliant cameras
+* [http://git.tuxfamily.org/microdiausp/microdiauserspace.git Microdia] - A Microdial webcam capture application
+* [http://cgit.sukimashita.com/usbmuxd.git/ usbmuxd] - A socket daemon to multiplex connections from and to iOS devices
+* [http://code.google.com/p/coldsync/source/browse/trunk/coldsync-ppp coldsync] - Palm OS synchronization utility
+* [https://github.com/atty303/tsniff tsniff] - ISDB-T smart card sniffer
+* [http://www.xdimax.com/sub20/sub20.html#DLD SUB-20] - Software for the Dimax SUB-20 
+Multi Interface USB Adapter
+* [http://qdot.github.com/libnifalcon libnifalcon] - A driver for the Novint Falcon Haptic Device
+* [http://xpiocards.sourceforge.net/ XPIOCARDS] - A flight simulator interface
+* [http://labjack.com/support/linux-and-mac-os-x-drivers Exodriver] - Open Source drivers for Labjack data acquisition devices
+* [http://code.google.com/p/madwimax/ madWiMAX] - A Linux driver for mobile WiMAX devices
+* [https://github.com/Yubico/yubikey-personalization Yubikey Personalization] - Library and command line tool used to personalize YubiKeys.
+* [http://ettus-apps.sourcerepo.com/redmine/ettus/projects/uhd/wiki USRP Hardware Driver (UHD)] -A Cross-platform universal hardware driver for USRP devices
 
 = Language Bindings =
 
