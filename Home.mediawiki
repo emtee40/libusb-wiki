@@ -114,7 +114,6 @@ To create projects relying on '''libusb''', please refer to the samples in the <
 * [http://libusbdotnet.sourceforge.net/ libusbdotnet for C#, DotNet and Mono]
 * [http://bitpim.svn.sourceforge.net/viewvc/bitpim/trunk/bitpim/src/native/usb/ partial python wrapper using swig]
 * [http://github.com/vpelletier/python-libusb1 python-libusb1, simple Python wrapper]
-* [http://github.com/jteeuwen/go-pkg-usb Go libusb-1.0 wrapper]
 * [https://github.com/schakko/node-usb node.js libusb-1.0 binding]
 * [https://forge.ocamlcore.org/projects/ocaml-usb/ OCaml libusb-1.0 binding]
 * [https://github.com/littledan/Factor/tree/master/extra/libusb Fator libusb-1.0 binding]
