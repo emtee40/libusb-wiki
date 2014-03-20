@@ -1,6 +1,6 @@
 [[logo-160.png]]
 
-<big>'''A cross-platform user-mode library, for generic access to USB devices'''</big>
+<big>'''A cross-platform user-mode librar`y, for generic access to USB devices'''</big>
 
 = Description =
 == About ==
@@ -52,7 +52,7 @@ You are also encouraged to check the [https://github.com/libusb/libusb/wiki/_pag
 More information on the Windows implementation can be obtained from the '''[[Windows|Windows Backend]]''' page.
 
 Note:
-FreeBSD 8 and above include a FreeBSD-specific reimplementation of the libusbx/libusb API, so your applications will probably work there too. The source code for this library can be found [http://svn.freebsd.org/viewvc/base/head/lib/libusb/ here].
+FreeBSD 8 and above include a FreeBSD-specific reimplementation of the libusb API, so your applications will probably work there too. The source code for this library can be found [http://svn.freebsd.org/viewvc/base/head/lib/libusb/ here].
 
 If you are interested in porting to other platforms, the [https://github.com/libusb/libusb/blob/master/PORTING PORTING] file tells you where to start. We are more than happy to help out here, please write to the mailing list with your questions and feedback.
 
