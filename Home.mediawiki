@@ -109,16 +109,17 @@ To create projects relying on '''libusb''', please refer to the samples in the <
 
 = Language Bindings =
 
-* Haskell bindings: [http://hackage.haskell.org/cgi-bin/hackage-scripts/package/bindings-libusb Low level], [http://hackage.haskell.org/cgi-bin/hackage-scripts/package/usb-0.1 high level]
-* [http://github.com/larskanis/libusb libusb for Ruby]
-* [http://pyusb.wiki.sourceforge.net/ pyusb for Python]
-* [http://libusbdotnet.sourceforge.net/ libusbdotnet for C#, DotNet and Mono]
-* [http://bitpim.svn.sourceforge.net/viewvc/bitpim/trunk/bitpim/src/native/usb/ partial python wrapper using swig]
-* [http://github.com/vpelletier/python-libusb1 python-libusb1, simple Python wrapper]
-* [https://github.com/schakko/node-usb node.js libusb-1.0 binding]
-* [https://forge.ocamlcore.org/projects/ocaml-usb/ OCaml libusb-1.0 binding]
-* [https://github.com/littledan/Factor/tree/master/extra/libusb Fator libusb-1.0 binding]
-* [https://bitbucket.org/doub/luausb/overview lua libusb-1.0 binding]
+* [http://usb4java.org/ usb4java] &mdash; libusb for '''Java'''
+* [http://libusbdotnet.sourceforge.net/ LibUsbDotNet] &mdash; libusb for '''C#''', '''.NET''' and '''Mono'''
+* [http://sourceforge.net/apps/trac/pyusb/ PyUSB] &mdash; libusb for '''Python'''
+* [http://github.com/vpelletier/python-libusb1 python-libusb1] &mdash; Another '''Python''' ctype-based wrapper
+* [http://sourceforge.net/p/bitpim/code/HEAD/tree/trunk/bitpim/src/native/usb/ BitPim/USB] &mdash; A partial '''Python''' wrapper using swig
+* [http://github.com/larskanis/libusb libusb for '''Ruby''']
+* '''Haskell''' [http://hackage.haskell.org/cgi-bin/hackage-scripts/package/bindings-libusb low level] and [http://hackage.haskell.org/cgi-bin/hackage-scripts/package/usb-0.1 high level] bindings
+* [https://bitbucket.org/doub/luausb/overview luausb] &mdash; libusb for '''LUA'''
+* [https://github.com/schakko/node-usb node-usb] &mdash; libusb for '''node.js'''
+* [https://forge.ocamlcore.org/projects/ocaml-usb/ ocaml-usb] &mdash; libusb for '''OCaml'''
+* [https://github.com/littledan/Factor/tree/master/extra/libusb '''Factor''' libusb bindings]
 
 = Other Resources =
 
