@@ -1,6 +1,6 @@
 [[logo-160.png]]
 
-<big>'''A cross-platform user-mode librar`y, for generic access to USB devices'''</big>
+<big>'''A cross-platform user-mode library, for generic access to USB devices'''</big>
 
 = Description =
 == About ==
