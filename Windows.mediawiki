@@ -40,7 +40,7 @@ A <code>.NET</code> version of libusb, called [http://libusbdotnet.sourceforge.n
 
 === Driver Installation ===
 
-If your target device is not HID, you __must__ install a driver before you can communicate with it using libusb. Currently, this means installing one of Microsoft's <code>WinUSB</code>, [http://sourceforge.net/apps/trac/libusb-win32/wiki libusb-win32] or [http://code.google.com/p/usb-travis/ libusbK] drivers. Two options are available:
+If your target device is not HID, you '''must''' install a driver before you can communicate with it using libusb. Currently, this means installing one of Microsoft's <code>WinUSB</code>, [http://sourceforge.net/apps/trac/libusb-win32/wiki libusb-win32] or [http://code.google.com/p/usb-travis/ libusbK] drivers. Two options are available:
 * '''Recommended''': Use the most recent version of '''[http://zadig.akeo.ie Zadig]''', an Automated Driver Installer GUI application for <code>WinUSB</code>, <code>libusb-win32</code> and <code>libusbK</code>...
 * Alternatively, if you are only interested in <code>WinUSB</code>, you can download the [http://libusb-winusb-wip.googlecode.com/files/winusb%20driver.zip WinUSB driver files] and customize the <code>inf</code> file for your device.
 
