@@ -50,7 +50,7 @@ Please read the following two Apple technical notes for more details about writi
 
 === How to use libusb under Windows? ===
 
-Please refer to the following Wiki page:
+Please refer to the following Wiki page:<br>
 [https://github.com/libusb/libusb/wiki/Windows#How_to_use_libusb_on_Windows] 
 
 === Can libusb be used on the USB device side, e.g. Linux Gadget Device? ===
@@ -105,6 +105,13 @@ Windows RT is locked by Microsoft, which means that users cannot install the app
 === Does libusb support Apple iOS device? ===
 
 No.
+
+=== Does libusb support Windows CE based device? ===
+
+Yes.<br>
+
+Please refer to the Windows CE related information in the following file.<br>
+[https://github.com/libusb/libusb/blob/master/INSTALL_WIN.txt]
 
 === Does libusb support Android ===
 
