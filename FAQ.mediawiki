@@ -48,6 +48,11 @@ Please read the following two Apple technical notes for more details about writi
 * [https://developer.apple.com/library/mac/technotes/tn2315/_index.html Technical Note TN2315: Introducing the Apple AppleUSBFTDI kernel driver ] 
 * [https://developer.apple.com/library/mac/qa/qa1076/_index.html Technical Q&A QA1076: Tips on USB driver matching for Mac OS X]
 
+=== How to use libusb under Windows? ===
+
+Please refer to the following Wiki page:
+[https://github.com/libusb/libusb/wiki/Windows#How_to_use_libusb_on_Windows] 
+
 === Can libusb be used on the USB device side, e.g. Linux Gadget Device? ===
 
 No.<br/>
