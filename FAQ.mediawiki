@@ -32,6 +32,22 @@ The standard solution is to use udev rules. Here are some links to udev related 
 * [http://www.reactivated.net/udevrules.php Writing udev rules]
 * [http://vger.kernel.org/vger-lists.html#linux-hotplug Proper place to ask questions about udev rules]
 
+=== How can I run libusb applications under Mac OS X if there is already a kernel extension installed for the device? ===
+
+If there is no existing kernel extension installed for the device, libusb will run out of the box. However, if there is an existing kernel extension installed for the device, there are two ways to get libusb working.
+
+1) You can use kextunload to unload the kernel extension. You need to run the command as root. Take note this may not be possible for drivers like USB HID since it may be used by other USB HID device.
+   Eg: "sudo kextunload -b com.apple.driver.AppleUSBFTDI" 
+will unload the Apple provided FTDI driver (Mac OS X Mavericks or later).
+   Eg: "sudo kextunload FTDIUSBSerialDriver.kext"
+will unload the FTDI provided VCP driver.
+
+2) You can use a codeless kext to prevent the kernel driver from attaching to the device. Take note that OS X Mavericks and later require that the kext be signed using a special Developer ID.
+
+Please read the following two Apple technical notes for more details about writing a codeless kext.
+* [https://developer.apple.com/library/mac/technotes/tn2315/_index.html Technical Note TN2315: Introducing the Apple AppleUSBFTDI kernel driver ] 
+* [https://developer.apple.com/library/mac/qa/qa1076/_index.html Technical Q&A QA1076: Tips on USB driver matching for Mac OS X]
+
 === Can libusb be used on the USB device side, e.g. Linux Gadget Device? ===
 
 No.<br/>
