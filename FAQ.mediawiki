@@ -34,19 +34,32 @@ The standard solution is to use udev rules. Here are some links to udev related 
 
 === How can I run libusb applications under Mac OS X if there is already a kernel extension installed for the device? ===
 
-If there is no existing kernel extension installed for the device, libusb will run out of the box. However, if there is an existing kernel extension installed for the device, there are two ways to get libusb working.
+If there is no existing kernel extension installed for the device, libusb will run out of the box, you odo not even need to have root privilege and there is no need to set up udev rules like Linux. However, if there is an existing kernel extension installed for the device, then it is more troublesome. There are ways to  get libusb working and they all require some interventions as root.
 
-1) You can use kextunload to unload the kernel extension. You need to run the command as root. Take note this may not be possible for drivers like USB HID since it may be used by other USB HID device.
-   Eg: "sudo kextunload -b com.apple.driver.AppleUSBFTDI" 
-will unload the Apple provided FTDI driver (Mac OS X Mavericks or later).
-   Eg: "sudo kextunload FTDIUSBSerialDriver.kext"
-will unload the FTDI provided VCP driver.
+1) You can use kextunload to unload the kernel extension. You need to run the command as root. Take note this may not be possible for drivers like USB HID since it may be used by other USB HID device. Take note that the kextunload command will lose its effect in the next boot. 
+    sudo kextunload -b com.apple.driver.AppleUSBFTDI 
+The above command will unload the Apple provided FTDI driver (Mac OS X Mavericks or later).
+    sudo kextunload FTDIUSBSerialDriver.kext
+The above command will unload the FTDI provided VCP driver.
 
 2) You can use a codeless kext to prevent the kernel driver from attaching to the device. Take note that OS X Mavericks and later require that the kext be signed using a special Developer ID.
 
 Please read the following two Apple technical notes for more details about writing a codeless kext.
 * [https://developer.apple.com/library/mac/technotes/tn2315/_index.html Technical Note TN2315: Introducing the Apple AppleUSBFTDI kernel driver ] 
 * [https://developer.apple.com/library/mac/qa/qa1076/_index.html Technical Q&A QA1076: Tips on USB driver matching for Mac OS X]
+
+3) In certain cases, you can manually edit the Info.plist configuration file of a kernel extension to prevent it from loading for certain VID/PID combination.
+
+For example, in the case of Apple provided FTDI driver, you can edit the following file to comment out
+the key/dict sections of the desired VID/PID combination.
+    /System/Library/Extensions/IOUSBFamily.kext/Contents/PlugIns/AppleUSBFTDI.kext/Contents/Info.plist
+
+Once you finish the editing, you can issue the following two commands and everything should work after that.
+    sudo kextunload -bundle com.apple.driver.AppleUSBFTDI
+    sudo kextload -bundle com.apple.driver.AppleUSBFTDI
+
+Reference: 
+* [http://alvarop.com/2014/01/using-busblaster-openocd-on-osx-mavericks/]
 
 === How to use libusb under Windows? ===
 
