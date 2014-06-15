@@ -33,7 +33,7 @@ Note however that the scripts are smart enough to tell you if you forgot to crea
 * If any bugs were pending actual release, close them
 * If bugs were pending to the milestone, that haven't been completed, move them to the next release
 * On release day, close the release task issue
-* Upload the snapshot(s) (if not automated) '''and make sure the source tarball is set as the default download'''
+* Upload the snapshot(s) (if not automated) '''and make sure the latest source tarball is set as the default download''' (which needs to be done manually)
 * Update the project's web page if needed
 * Check that the SourceForge tarball download actually works
 * Update and push the index page from [https://github.com/libusb/libusb.github.com]
