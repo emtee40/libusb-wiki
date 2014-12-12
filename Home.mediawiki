@@ -5,7 +5,7 @@
 = Description =
 == About ==
 
-'''libusb''' is a cross-platform user-mode library that provides access to USB devices.
+'''libusb''' is a cross-platform user-mode library that provides access to USB devices. The project website is at [http://libusb.info libusb.info]. The old project site [http://libusb.org libusb.org] should not be used.
 
 == Features ==
 
