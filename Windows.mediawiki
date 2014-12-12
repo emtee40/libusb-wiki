@@ -4,7 +4,9 @@
 === About ===
 
 This project adds Windows platform support to the '''[[Home|libusb]]''' Open Source library, in order to help developers easily communicate with USB devices on Windows.
-Currently it supports the [http://msdn.microsoft.com/en-us/library/windows/hardware/ff540207.aspx WinUSB] and HID drivers for generic USB device access as well as the [https://sourceforge.net/apps/trac/libusb-win32/wiki libusb-win32] and [https://sourceforge.net/projects/libusbk/ libusbK] drivers.
+Currently it supports the [http://msdn.microsoft.com/en-us/library/windows/hardware/ff540207.aspx WinUSB] and HID drivers for generic USB device access as well as the [http://sourceforge.net/p/libusb-win32/wiki/Home/ libusb-win32] and [https://sourceforge.net/projects/libusbk/ libusbK] drivers.
+
+Take note libusb-win32 and libusbK are separated projects. libusb-win32 is a Windows only project which provide libusb-0.1 API compatible library for Windows and the kernel driver libusb0.sys. libusbK is a Windows only project which provides a new set of API for Windows and kernel driver libusbK.sys.
 
 === Binary Snapshots ===
 
