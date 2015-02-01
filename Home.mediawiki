@@ -120,6 +120,7 @@ To create projects relying on '''libusb''', please refer to the samples in the <
 * [https://github.com/schakko/node-usb node-usb] &mdash; libusb for '''node.js'''
 * [https://forge.ocamlcore.org/projects/ocaml-usb/ ocaml-usb] &mdash; libusb for '''OCaml'''
 * [https://github.com/littledan/Factor/tree/master/extra/libusb '''Factor''' libusb bindings]
+* [https://github.com/nimious/io-usb io-usb] &mdash; libusb for '''Nim'''
 
 = Other Resources =
 
