@@ -1,4 +1,5 @@
-'''IMPORTANT''': NEC/Renesas uPD720200/uPD720200A USB 3.0 users, please upgrade your drivers to [http://www.station-drivers.com/index.php/downloads/Drivers/Renesas-Nec/USB-3.0/ version 2.1.16.0 or later]. Older versions of the driver have [http://marc.info/?l=libusb-devel&m=130934450111495&w=2 a bug] that prevents libusb from accessing devices. uPD720201/uPD720202 users should use version 3.x (3.0.23 or later preferred).
+'''IMPORTANT''': NEC/Renesas uPD720200/uPD720200A USB 3.0 users, please upgrade your drivers to [http://www.station-drivers.com/index.php/downloads/Drivers/Renesas-Nec/USB-3.0/ version 2.1.16.0 or later].
+uPD720201/uPD720202 users should use [http://www.station-drivers.com/index.php/downloads/Drivers/Renesas-Nec/USB-3.0/ version 3.x (3.0.23 or later preferred)]. Older versions of the driver have [http://marc.info/?l=libusb-devel&m=130934450111495&w=2 a bug] that prevents libusb from accessing devices. 
 
 == Overview ==
 === About ===
