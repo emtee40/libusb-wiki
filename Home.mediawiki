@@ -9,6 +9,8 @@
 
 The current API is of 1.0 version (libusb-1.0 API). You can still use the legacy API (libusb-0.1 API) with the [https://github.com/libusb/libusb-compat-0.1 libusb-compat-0.1 wrapper].
 
+Take note libusb-win32 is a separate project and it is in bug-fix-only mode. New project should migrate to use libusb Windows backend.
+
 == Features ==
 
 * Supports all the major platforms: Linux, OS X, OpenBSD/NetBSD and Windows
