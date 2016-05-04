@@ -107,7 +107,7 @@ To create projects relying on '''libusb''', please refer to the samples in the <
 * [http://labjack.com/support/linux-and-mac-os-x-drivers Exodriver] - Open Source drivers for Labjack data acquisition devices
 * [http://code.google.com/p/madwimax/ madWiMAX] - A Linux driver for mobile WiMAX devices
 * [https://github.com/Yubico/yubikey-personalization Yubikey Personalization] - Library and command line tool used to personalize YubiKeys.
-* [http://ettus-apps.sourcerepo.com/redmine/ettus/projects/uhd/wiki USRP Hardware Driver (UHD)] - A Cross-platform universal hardware driver for USRP devices
+* [https://github.com/EttusResearch/uhd USRP Hardware Driver (UHD)] - A cross-platform driver for USRP Software Defined Radios
 * [https://github.com/ktossell/libuvc libuvc] - Library for webcams and other USB Video Class devices
 * '''And many more!...'''
 
