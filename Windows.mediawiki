@@ -47,7 +47,7 @@ If your target device is not HID, you '''must''' install a driver before you can
 * '''Recommended''': Use the most recent version of '''[http://zadig.akeo.ie Zadig]''', an Automated Driver Installer GUI application for <code>WinUSB</code>, <code>libusb-win32</code> and <code>libusbK</code>...
 * Alternatively, if you are only interested in <code>WinUSB</code>, you can download the [http://libusb-winusb-wip.googlecode.com/files/winusb%20driver.zip WinUSB driver files] and customize the <code>inf</code> file for your device.
 
-Note that if you install the libusb-win32 driver manually, you will also need to install the libusbK DLL, as all libusb-win32 accesses are done through it. One way to install/update libusbK.dll is to install libusbk development kit (libusbK-x.x.x.x-setup.exe from [http://sourceforge.net/projects/libusbk/ Sourceforge site] and choose to update the system files during the installation. 
+Note that if you install the libusb-win32 driver manually, you will also need to install the libusbK DLL, as all libusb-win32 accesses are done through it. One way to install/update libusbK.dll is to install libusbk development kit (libusbK-x.x.x.x-setup.exe from [http://sourceforge.net/projects/libusbk/ Sourceforge site] and choose to update the system files during the installation. However the support of libusb-win32/libusb0.sys is not ready, therefore you should not use libusb-win32/libusb0.sys for now.
 
 === Development Considerations ===
 
@@ -67,7 +67,7 @@ Because Windows does not provide a native <code>poll()</code> function, and cygw
 * The HID Report Descriptors provided by libusb are recomposed and may present minor differences from the actual ones, as the Windows HID API does not allow to read them directly from the device.
 * Because there is no native <code>poll()</code> on Windows, the ability to return externally pollable file descriptors on Windows <code>libusb_get_pollfd()</code> returns an error.
 * If you use a composite device, and plan to install a libusb compatible driver for any of the interfaces, you should ensure that your driver package adds a Device Interface GUID in the registry, as proper enumeration of composite devices in libusb depends on it. This is typically achieved by adding something like the following in your inf:<br/><code>HKR,,DeviceInterfaceGUIDs,0x00010000,{12345678-1234-1234-1234-123456789ABC}</code><br> This is in particular a problem with libusb-win32's inf-wizard which will be deprecated by libusb-win32 project. Please use Zadig instead.
-* <code>libusb0.sys</code> access is done through the libusbK DLL, therefore, if you plan to use the libusb-win32/libusb0.sys driver in libusb, you must have that library installed. If using a recent version of Zadig, you should not have to do anything, at it will install the library for you.
+* <code>libusb0.sys and libusbk.sys</code> access is done through the libusbK DLL, therefore, if you plan to use the libusb-win32/libusb0.sys or libusbK/libusbk.sys driver in libusb, you must have that library installed. If using a recent version of Zadig, you should not have to do anything, at it will install the library for you. However the support of libusb0.sys is not ready, therefore you should not use libusb-win32/libusb0.sys for now.
 
 == Development Links ==
 
