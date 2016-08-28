@@ -49,6 +49,8 @@ If your target device is not HID, you '''must''' install a driver before you can
 
 Note that if you install the libusb-win32 driver manually, you will also need to install the libusbK DLL, as all libusb-win32 accesses are done through it. One way to install/update libusbK.dll is to install libusbk development kit (libusbK-x.x.x.x-setup.exe from [http://sourceforge.net/projects/libusbk/ Sourceforge site] and choose to update the system files during the installation. However the support of libusb-win32/libusb0.sys is not ready, therefore you should not use libusb-win32/libusb0.sys for now.
 
+With the version 1.0.21 or later, you can also use usbdk backend. [https://cgit.freedesktop.org/spice/win32/usbdk usbdk] provides another driver option for libusb Windows backend.
+
 === Development Considerations ===
 
 The handling of composite devices under Windows is done with multiple drivers, that are children of the <code>usbccgp.sys</code> driver (Composite Generic Parent), as this is the default for the OS. For more info, see ''"2. How Windows handles a composite device"'' at [http://forum.silabs.com/ubbthreads.php?ubb=showflat&Number=39797]. If needed, it is also possible to replace the composite parent driver to access the device.
