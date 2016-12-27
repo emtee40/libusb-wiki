@@ -1,6 +1,6 @@
 = Frequently Asked Questions =
 
-== libusb.org; libusbx.org and libusb.info ==
+== libusb.org, libusbx.org and libusb.info ==
 
 libusb.org was the original home for libusb project. Now it still exists but the information and code are quite outdated.
 
@@ -96,11 +96,11 @@ If you encounter such an issue, you should report it to the libusb mailing-list.
 
 But please note that USB 3.0 is fairly new, so some Operating Systems are still catching up.
 
-For instance, USB 3.0 support for Windows 7 and earlier is very dependent on individual drivers, which are provided by the USB controller manufacturer, and not Microsoft. Some of these have been known to have bugs. Only Windows 8 and later has an official USB 3.0 stack that originates from Microsoft.
+For instance, USB 3.0 support for Windows 7 and earlier is very dependent on individual drivers, which are provided by the USB controller manufacturer, and not Microsoft. Some of these have been known to have bugs. Only Windows 8/8.1/10 and later have an official USB 3.0 stack that originates from Microsoft.
 
-For Linux, the xHCI driver is also not as mature as the other host controller driver.
+For Linux, the xHCI driver may also not be as mature as the other host controller driver. As of now (27-Dec-2016), things should be much better.  Please try to upgrade to later version of the kernel whenever possible to have better support.
 
-For Mac OS X, xHCI support has only been introduced recently with Mac OS X Mountain Lion, so USB 3.0 support may not be that mature either.
+For Mac OS X, xHCI support has only been introduced recently with Mac OS X Mountain Lion, so USB 3.0 support may not be that mature either. Things should be better now (27-Dec-2016). Whenever possible, please upgrade to later version of Mac OS X for better support.
 
 We will try to help you sort issues related to USB 3.0 usage where possible. But before you contact us, if on Windows 7, please make sure you test with the latest USB 3.0 drivers available from your xHCI provider, or, if on Linux, please make sure you test with the latest kernel, as the xHCI driver is regularly being updated there.
 
