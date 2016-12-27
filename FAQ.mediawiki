@@ -8,6 +8,10 @@ libusb.info is the current home page for libusb project.
 
 libusbx was a fork of libusb and libusbx.org is its website. As of 2014.01.26, libusbx project has been fully merged back into libusb and is being discontinued. libusbx.org may not exist for very long.
 
+== libusb-win32, libusbK and libusb project ==
+
+Take note libusb-win32 and libusbK projects are separate projects and both of them use libusb-win32 mailing list for technical support. libusb Windows backend can support device using libusbK.sys (and libusb0.sys driver -- not recommended due to issues) through libusbk.dll provided by libusbK project. 
+
 == Licensing ==
 
 === What is the libusb license? ===
