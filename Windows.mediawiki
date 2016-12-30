@@ -64,7 +64,12 @@ Because Windows does not provide a native <code>poll()</code> function, and cygw
 * <code>WinUSB</code> and <code>libusbK</code> cannot be used to set a device configuration that is [http://msdn.microsoft.com/en-us/library/windows/hardware/ff537060.aspx different from the first one]. This is a limitation of KMDF USB I/O Target. 
 * <code>WinUSB</code> does not support multiple concurrent applications (as per the [http://msdn.microsoft.com/en-us/library/windows/hardware/ff540215.aspx MSDN documentation]).
 * <code>WinUSB</code> does not support isochronous transfers.
-* With <code>WinUSB</code>, when <code>LIBUSB_RECIPIENT_INTERFACE</code> is used for the transfer, the <code>WinUSB</code> DLL forces the low byte of <code>wIndex</code> to the interface number, regardless of what you set it to. See http://www.lvr.com/forum/index.php?topic=331 for more details.
+* With <code>WinUSB</code>, when <code>LIBUSB_RECIPIENT_INTERFACE</code> is used for the transfer, the <code>WinUSB</code> DLL forces the low byte of <code>wIndex</code> to the interface number, regardless of what you set it to. 
+
+This is not a real limitation though, please refer to the [http://www.osronline.com/showthread.cfm?link=223812 OSR threads]. 
+
+From Tim Roberts answer in that thread, <i>One can also argue that this is a security measure.  The USB spec requires that the low byte of wIndex be set to the interface number when the recipient is set to "interface".  Devices that use that field for other purposes are broken.</i>
+
 * HID keyboards and mice cannot be accessed using the native HID driver as Windows reserves exclusive access to them.
 * Multiple HID top level collections are currently not supported (only the first top level collection will be used).
 * The HID Report Descriptors provided by libusb are recomposed and may present minor differences from the actual ones, as the Windows HID API does not allow to read them directly from the device.
