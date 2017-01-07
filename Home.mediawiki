@@ -95,7 +95,7 @@ To create projects relying on '''libusb''', please refer to the samples in the <
 * [http://sdrsharp.com/ SDR#] (SDR Sharp) - A high performance Software Defined Radio application
 * [http://openkinect.org/ OpenKinect] - Library and appplications for the Microsoft Xbox Kinect device
 * [http://www.openni.org/ OpenNI] - An Open Source SDK for 3D sensing 
-* [http://code.google.com/p/btstack/ BTstack] - A Portable User-Space Bluetooth Stack
+* [https://github.com/bluekitchen/btstack BTstack] - A Portable User-Space Bluetooth Stack
 * [http://usbpicprog.org/ UsbPicProg] - An Open Source PIC programmer
 * [http://www.freedesktop.org/wiki/Software/fprint/ fprint] - A fingerprint scanning application and library
 * [https://sourceforge.net/projects/libdc1394/ IIDC Camera Control Library] - Capture and control API for IIDC compliant cameras
