@@ -128,6 +128,8 @@ To create projects relying on '''libusb''', please refer to the samples in the <
 * [https://github.com/littledan/Factor/tree/master/extra/libusb '''Factor''' libusb bindings]
 * [https://github.com/nimious/io-usb io-usb] &mdash; libusb for '''Nim'''
 * [https://github.com/gwadej/perl-device-usb Device::USB] &mdash; libusb for '''perl'''
+* [https://github.com/kylelemons/gousb gousb] &mdash; libusb for '''Go'''
+
 
 = Other Resources =
 
