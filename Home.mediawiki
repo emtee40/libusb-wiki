@@ -127,6 +127,7 @@ To create projects relying on '''libusb''', please refer to the samples in the <
 * [https://forge.ocamlcore.org/projects/ocaml-usb/ ocaml-usb] &mdash; libusb for '''OCaml'''
 * [https://github.com/littledan/Factor/tree/master/extra/libusb '''Factor''' libusb bindings]
 * [https://github.com/nimious/io-usb io-usb] &mdash; libusb for '''Nim'''
+* [https://github.com/gwadej/perl-device-usb Device::USB] &mdash; libusb for '''perl'''
 
 = Other Resources =
 
