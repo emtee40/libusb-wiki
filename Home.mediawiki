@@ -102,7 +102,6 @@ To create projects relying on '''libusb''', please refer to the samples in the <
 * [http://git.tuxfamily.org/microdiausp/microdiauserspace.git Microdia] - A Microdial webcam capture application
 * [http://cgit.sukimashita.com/usbmuxd.git/ usbmuxd] - A socket daemon to multiplex connections from and to iOS devices
 * [http://code.google.com/p/coldsync/source/browse/trunk/coldsync-ppp coldsync] - Palm OS synchronization utility
-* [https://github.com/atty303/tsniff tsniff] - ISDB-T smart card sniffer
 * [http://www.xdimax.com/sub20/sub20.html#DLD SUB-20] - Software for the Dimax SUB-20 Multi Interface USB Adapter
 * [http://qdot.github.com/libnifalcon libnifalcon] - A driver for the Novint Falcon Haptic Device
 * [http://xpiocards.sourceforge.net/ XPIOCARDS] - A flight simulator interface
