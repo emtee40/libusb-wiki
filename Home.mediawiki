@@ -55,6 +55,10 @@ You are also encouraged to check the [https://github.com/libusb/libusb/wiki/_pag
 * OpenBSD and NetBSD &#91;'''status''': EXPERIMENTAL&#93;
 ** Only device with <code>ugen</code> driver are supported
 
+* Solaris support was added in libusb-1.0.21
+
+* Haiku support was added in libusb-1.0.20
+
 More information on the Windows implementation can be obtained from the '''[[Windows|Windows Backend]]''' page.
 
 Note:
