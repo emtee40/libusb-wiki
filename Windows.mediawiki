@@ -38,7 +38,8 @@ libusb was tested under Windows 8 and Windows 8.1, for both 32 and 64 bit, and n
 === .NET support ===
 
 A <code>.NET</code> version of libusb, called [http://libusbdotnet.sourceforge.net/V2/Index.html LibUsbDotNet], based on libusb 1.0, has been developed by Travis Lee Robinson. If you plan to use libusb in a <code>.NET</code> project, make sure you check [http://libusbdotnet.sourceforge.net] or [http://sourceforge.net/projects/libusbdotnet/], but be aware that LibUsbDotNet's most recent version is v2.2.8, which was released on 2010-10-29.  
-Travis Lee Robinson also created the libusbK project, which has C# wrappers for its "libusbK.dll". The latest (v3.0.7, 2014-04-27) binaries, source code and wrapper classes can be downloaded from [its SourceForge directory](https://sourceforge.net/projects/libusbk/files/libusbK-release/3.0.7.0/).  
+
+Travis Lee Robinson also created the libusbK project, which has C# wrappers for its "libusbK.dll". The latest (v3.0.7, 2014-04-27) binaries, source code and wrapper classes can be downloaded from [https://sourceforge.net/projects/libusbk/files/libusbK-release/3.0.7.0/ its SourceForge directory].  
 
 
 == How to use libusb on Windows ==
