@@ -8,22 +8,22 @@ TODO: talk about time spread and stuff: 4 people trying to test a "you just have
 
 TODO: image of a good e-mail example with labels ([1], [2], ...)
 * Make sure you subscribe to libusb-devel and mail the list rather than the developers
-* person checked the API for return values
-* Always tell us the OS you use
+* Check the API for return values
+* Always tell us the OS and OS version you use
 * Always tell us the device you use, an if it's not obvious, give us a description of what you want to do with it. To try to replicate the issue, we may have to find a similar device
 * Always tell us if you use a custom firmware
 * Try with a different device, and 
-* Try to provide us with a patch for xusb that we can use to replicate the issue. Of course xusb does not suit all situations, but it should be generic enough for simple one.
+* Try to provide us with a patch for xusb that we can use to replicate the issue. Of course xusb does not suit all situations, but it should be generic enough for simple one. If you do not want to use xusb, you can use a simple program as well. 
 * Always provide us with a complete log. Don't cherry pick.
 * Check the limitations from each backend
-* Give us a precise description of the steps we 
+* Give us a precise description of the steps we can reproduce the problem
 * Try to test on a different OS: helps us identify if it's core or backend
 * At least sign with your first name so that we know how to address you. Besides yada, we may reply to multiple people at once and it's a PITA to address someone as starshine1234
 
 == Additional stuff ==
 
 * if it's an issue with descriptors, don't just assume that libusb is the problem: try with usbview (Windows) or <tt>lsusb</tt> (UNIX)
-* a log goes a long way! <tt>libusb_debug()</tt> can do wonders.
+* a log goes a long way! <tt>libusb_debug() or LIBUSB_DEBUG=4 </tt> can do wonders.
 * a trace is even better. And yes, Windows (7) can also generate insightful traces
 * we have a '''generic''' test utility that can produce a log and will perform basic device access. You shouldn't come to us with "I can't access my device" but with "I can't access my device, and here is the log from <tt>xusb</tt>" at the very least, tell us the VID:PID of your device, its purpose, and whether it uses a custom firmware that you developed or a commercial one
 * A search with basic keywords describing your issue against the libusb-devel mailing-list can be very insightful
