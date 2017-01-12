@@ -42,7 +42,7 @@ You are also encouraged to check the [https://github.com/libusb/libusb/wiki/_pag
 
 * Linux &#91;'''status''': Stable&#93;
 ** Any modern Linux system with <code>usbfs</code>.
-** Note: for USB 3.0 port, the Linux xHCI driver is less mature than the other host drivers. So there may be issues with USB 3.0 port. Please report to the mailing list for issues related to USB 3.0.
+
 * Mac OS X &#91;'''status''': Stable&#93;
 ** Any modern version of Mac OS X (PowerPC or x86 either in 32 and 64 bits)
 ** Note: for USB 3.0 port,please use Mac OS X Mountain Lion 10.8.2 or later.
@@ -65,8 +65,7 @@ You are also encouraged to check the [https://github.com/libusb/libusb/wiki/_pag
 
 More information on the Windows implementation can be obtained from the '''[[Windows|Windows Backend]]''' page.
 
-Note:
-FreeBSD 8 and above include a FreeBSD-specific reimplementation of the libusb API, so your applications will probably work there too. The source code for this library can be found [http://svn.freebsd.org/viewvc/base/head/lib/libusb/ here].
+Note: FreeBSD 8 and above include a FreeBSD-specific reimplementation of the libusb API, so your applications will probably work there too. The source code for this library can be found [http://svn.freebsd.org/viewvc/base/head/lib/libusb/ here].
 
 If you are interested in porting to other platforms, the [https://github.com/libusb/libusb/blob/master/PORTING PORTING] file tells you where to start. We are more than happy to help out here, please write to the mailing list with your questions and feedback.
 
