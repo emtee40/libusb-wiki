@@ -3,16 +3,15 @@
 === DNS ===
 * http://libusb.info -> main site '''[DONE]'''
 * http://log.libusb.info -> github Changelog '''[DONE]'''
-* http://api.libusb.info -> SF API pages
+* http://api.libusb.info -> SF API pages '''[DONE]'''
 * http://mailing-list.libusb.info -> SF mailing list page '''[DONE]'''
 * http://windows.libusb.info -> Windows wiki page '''[DONE]'''
 
 === Files ===
-* Upload the tarballs and Windows binaries to the SF libusb repo (should we try to change the cumbersome directory structure?)
+* Upload the tarballs and Windows binaries to the SF libusb repo (should we try to change the cumbersome directory structure?) '''[DONE]'''
 
 === Misc. ===
 * Set a roadmap task that coincides with the libusbx one
 * What do we want to do about LIBUSBX_API_VERSION? Switch to LIBUSB_API_VERSION and have a #define '''[DONE]'''
 * Do we want to sanitize the libusbx refs in the ChangeLog? Some of them '''[DONE]'''
-* Setup the github -> mailing-list notification (How the heck did I do for libusbx that already?)
-
+* Setup the github -> mailing-list notification (How the heck did I do for libusbx that already?) '''[DONE]'''
