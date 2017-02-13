@@ -16,7 +16,7 @@ libusb-win32 project includes libusb0.sys (Windows WDM kernel driver in device d
 
 libusbK projects includes libusbk.sys (Windows KMDF kernel driver) and libusbK.dll (libusbK API, library). libusbK API is Windows only and libusbk.dll supports device using libusbK.sys, libusb0.sys and WinUSB.
 
-libusb Windows backend can support device using libusbK.sys (and libusb0.sys driver -- not recommended due to issues) through libusbk.dll provided by libusbK project. 
+libusb Windows backend can support device using libusbK.sys (and libusb0.sys driver -- not recommended due to issues) through libusbk.dll provided by libusbK project. If libusbk.dll is present, it will use libusbK.dll as the intermediate library to support device using WinUSB driver. If libusbK.dll is not present, then it will directly talk to device using WinUSB using WinUSB API. libusb Windows also supports device using generic HID driver or usbdk driver.
 
 == Licensing ==
 
