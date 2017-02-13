@@ -18,7 +18,7 @@ libusbK projects includes libusbk.sys (Windows KMDF kernel driver) and libusbK.d
 
 libusb Windows backend can support device using libusbK.sys (and libusb0.sys driver -- not recommended due to issues) through libusbk.dll provided by libusbK project. If libusbk.dll is present, it will use libusbK.dll as the intermediate library to support device using WinUSB driver. If libusbK.dll is not present, then it will directly talk to device using WinUSB using WinUSB API. libusb Windows also supports device using generic HID driver or usbdk driver.
 
-=== What about usbdk? ===
+== What about usbdk? ==
 
 [https://github.com/daynix/UsbDk usbdk] is another open-source generic USB driver. usbdk is a new backend added in libusb-1.0.21 release. The major benefit is that you can keep the existing driver. It supports isochronous transfer as well.
 
