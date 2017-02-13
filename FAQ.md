@@ -10,7 +10,9 @@ libusbx was a fork of libusb and libusbx.org is its website. As of 2014.01.26, l
 
 == libusb-win32, libusbK and libusb project ==
 
-Take note libusb-win32 and libusbK projects are separate projects and both of them use libusb-win32 mailing list for technical support. libusb Windows backend can support device using libusbK.sys (and libusb0.sys driver -- not recommended due to issues) through libusbk.dll provided by libusbK project. 
+Take note [https://sourceforge.net/p/libusb-win32/wiki/Home/ libusb-win32] and [http://libusbk.sourceforge.net/UsbK3/index.html libusbK] projects are separate projects and both of them use [https://lists.sourceforge.net/lists/listinfo/libusb-win32-devel libusb-win32 mailing list] for technical support. 
+
+libusb Windows backend can support device using libusbK.sys (and libusb0.sys driver -- not recommended due to issues) through libusbk.dll provided by libusbK project. 
 
 == Licensing ==
 
