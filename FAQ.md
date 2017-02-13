@@ -79,13 +79,14 @@ Please refer to the following Wiki page:<br>
 [https://github.com/libusb/libusb/wiki/Windows#How_to_use_libusb_on_Windows] 
 
 Basically you will need to install a supported driver.
-1) If your device is a generic HID device, no extra driver is needed since it is supported. But HIDAPI is recommended for HID device than libusb Windows.
-2) If your device uses WinUSB driver, no extra driver is needed since it is supported natively.
-3) If your device uses libusbK driver, you should be set as well (libusbK.dll should have been installed).
-4) If your device uses libusb0.sys driver, please switch to libusbK driver.
-4) If your device uses libusb-win32 filter driver, please uninstall the filter driver and try usbdk instead.
-5) If your device uses other driver, and you do want to keep using the existing driver, then try usbdk.
-6) If your device uses other driver and you are okay with switching drivers, then switch to WinUSB (preferred) or libusbK driver.
+
+* 1) If your device is a generic HID device, no extra driver is needed since it is supported. But HIDAPI is recommended for HID device than libusb Windows.
+* 2) If your device uses WinUSB driver, no extra driver is needed since it is supported natively.
+* 3) If your device uses libusbK driver, you should be set as well (libusbK.dll should have been installed).
+* 4) If your device uses libusb0.sys driver, please switch to libusbK driver.
+* 5) If your device uses libusb-win32 filter driver, please uninstall the filter driver and try usbdk instead.
+* 6) If your device uses other driver, and you do want to keep using the existing driver, then try usbdk.
+* 7) If your device uses other driver and you are okay with switching drivers, then switch to WinUSB (preferred) or libusbK driver.
 
 === Can libusb be used on the USB device side, e.g. Linux Gadget Device? ===
 
