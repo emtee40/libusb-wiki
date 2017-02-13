@@ -12,6 +12,10 @@ libusbx was a fork of libusb and libusbx.org is its website. As of 2014.01.26, l
 
 Take note [https://sourceforge.net/p/libusb-win32/wiki/Home/ libusb-win32] and [http://libusbk.sourceforge.net/UsbK3/index.html libusbK] projects are separate projects and both of them use [https://lists.sourceforge.net/lists/listinfo/libusb-win32-devel libusb-win32 mailing list] for technical support. 
 
+libusb-win32 project includes libusb0.sys (Windows WDM kernel driver in device driver mode or filter driver mode) and libusb0.dll (libusb-win32 API, library). libusb-win32 API is a superset of the libusb-0.1 API supported by libusb-compat. libusb0.dll supports device using libusb0.sys and libusbK.sys.
+
+libusbK projects includes libusbk.sys (Windows KMDF kernel driver) and libusbK.dll (libusbK API, library). libusbK API is Windows only and libusbk.dll supports device using libusbK.sys, libusb0.sys and WinUSB.
+
 libusb Windows backend can support device using libusbK.sys (and libusb0.sys driver -- not recommended due to issues) through libusbk.dll provided by libusbK project. 
 
 == Licensing ==
