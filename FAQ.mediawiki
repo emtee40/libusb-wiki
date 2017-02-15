@@ -93,7 +93,7 @@ Basically you will need to install a supported driver.
 * If your device is a generic HID device, no extra driver is needed since it is supported. But HIDAPI is recommended for HID device than libusb Windows.
 * If your device uses WinUSB driver, no extra driver is needed since it is supported natively.
 * If your device uses libusbK driver, you should be set as well (libusbK.dll should have been installed).
-* If your device uses libusb0.sys driver, please switch to libusbK driver.
+* If your device uses libusb-win32 (libusb0.sys) device driver, please switch to libusbK driver.
 * If your device uses libusb-win32 filter driver, please uninstall the filter driver and try usbdk instead.
 * If your device uses other driver, and you do want to keep using the existing driver, then try usbdk.
 * If your device uses other driver and you are okay with switching drivers, then switch to WinUSB (preferred) or libusbK driver.
