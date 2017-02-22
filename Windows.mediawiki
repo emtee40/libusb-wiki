@@ -11,7 +11,7 @@ Take note libusb-win32 and libusbK are separated projects. libusb-win32 is a Win
 
 === Binary Snapshots ===
 
-Pre-built binary snapshots are provided in the [http://sourceforge.net/projects/libusb/files/releases/ release] directory under <code>/<current-version>/Windows/</code>.<br />
+Pre-built binary snapshots are provided in the [http://sourceforge.net/projects/libusb/files/ Sourceforge files] directory along with the source code archive.<br />
 These are provided AS IS for your convenience, generated for the following environments:
 
 * Microsoft Visual Studio and DDK/WDK &rarr; MS32(32 bit) and MS64 (64 bit) directories
