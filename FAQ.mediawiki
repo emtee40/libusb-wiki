@@ -128,19 +128,20 @@ For Mac OS X, xHCI support has only been introduced recently with Mac OS X Mount
 
 We will try to help you sort issues related to USB 3.0 usage where possible. But before you contact us, if on Windows 7, please make sure you test with the latest USB 3.0 drivers available from your xHCI provider, or, if on Linux, please make sure you test with the latest kernel, as the xHCI driver is regularly being updated there.
 
-=== Does libusb support HID devices? ===
-
-libusb does try to support HID devices where possible. However, the level of support, as well as the ease of access of HID devices, depends on the platform you will be running libusb on. 
-
-On Linux, you must detach the kernel HID driver for libusb to communicate with the device, but the libusb API can do this for you. If you have a relevant udev rule, you should also be able to perform that operation without requiring root privileges. 
-
-On Mac OS X, you must install a codeless kext kernel driver and then reboot, before you will be able communicate with the device. This may not be easy with the release of later Mac OS X versions. So it is not recommended.
-
-On Windows, the native Windows HID driver is supported by libusb, but there are some limitations, such as not being able to access HID mice and keyboards, as they are system reserved, as well as getting a direct read of HID report descriptors. Apart from that, you should be communicate with an HID device as you would with any other USB device.
-
-Under NetBSD/OpenBSD, you may have to rebuild the kernel in order to use libusb with the HID device. Please refer to the  [http://www.apcupsd.com/manual/manual.html#bsd-usb-configuration apcupsd page]. It also covers FreeBSD.
-
+=== Does libusb support USB HID devices? ===
 If your application will revolve around HID access, you are strongly encouraged to try to use the ​[http://www.signal11.us/oss/hidapi/ HIDAPI library] by Signal 11 Software, which is also cross-platform. It uses native HID API under Windows and Mac OS X. It use either hidraw or libusb as the backend under Linux.
+
+libusb was widely used to access USB HID device under Linux for historical reasons so there may be use cases to use libusb for HID device due to existing code base or for platforms without HIDAPI support. However, the level of support as well as the ease of access of HID devices, depends on the platform you will be running libusb on. 
+
+On Linux, you must detach the kernel HID driver for libusb to communicate with the device, but the libusb API can do this for you. If you have a relevant udev rule, you should also be able to perform that operation without requiring root privileges. Still HIDAPI is recommended for new development.
+
+On Mac OS X, you must install a codeless kext kernel driver and then reboot, before you will be able communicate with the device. This may not be easy with the release of later Mac OS X versions. So it is not recommended. HIDAPI should be the library of choices if you need Mac OS X support.
+
+On Windows, the native Windows HID driver is supported by libusb, but there are some limitations, such as not being able to access HID mice and keyboards since they are system reserved, as well as getting a direct read of HID report descriptors.
+
+Under NetBSD/OpenBSD, you may have to rebuild the kernel in order to use libusb with the HID device. Please refer to the  [http://www.apcupsd.com/manual/manual.html#bsd-usb-configuration apcupsd page]. 
+
+In general, you may find HIDAPI a better library for HID device.
 
 == Platform Support ==
 
