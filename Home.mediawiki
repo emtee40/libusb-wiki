@@ -128,7 +128,7 @@ To create projects relying on '''libusb''', please refer to the samples in the <
 * [http://sourceforge.net/p/bitpim/code/HEAD/tree/trunk/bitpim/src/native/usb/ BitPim/USB] &mdash; A partial '''Python''' wrapper using swig
 * [http://github.com/larskanis/libusb libusb for '''Ruby''']
 * '''Haskell''' [http://hackage.haskell.org/cgi-bin/hackage-scripts/package/bindings-libusb low level] and [http://hackage.haskell.org/cgi-bin/hackage-scripts/package/usb-0.1 high level] bindings
-* [https://bitbucket.org/doub/luausb/overview luausb] &mdash; libusb for '''LUA'''
+* [https://bitbucket.org/doub/luausb/overview luausb] &mdash; libusb for '''Lua'''
 * [https://github.com/tessel/node-usb node-usb] &mdash; libusb for '''node.js'''
 * [https://forge.ocamlcore.org/projects/ocaml-usb/ ocaml-usb] &mdash; libusb for '''OCaml'''
 * [https://github.com/littledan/Factor/tree/master/extra/libusb '''Factor''' libusb bindings]
