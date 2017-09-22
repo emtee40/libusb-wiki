@@ -56,7 +56,7 @@ The standard solution is to use udev rules. Here are some links to udev related 
 
 === How can I run libusb applications under Mac OS X if there is already a kernel extension installed for the device? ===
 
-If there is no existing kernel extension installed for the device, libusb will run out of the box, you odo not even need to have root privilege and there is no need to set up udev rules like Linux. However, if there is an existing kernel extension installed for the device, then it is more troublesome. There are ways to  get libusb working and they all require some interventions as root.
+If there is no existing kernel extension installed for the device, libusb will run out of the box, you do not even need to have root privilege and there is no need to set up udev rules like Linux. However, if there is an existing kernel extension installed for the device, then it is more troublesome. There are ways to  get libusb working and they all require some interventions as root.
 
 1) You can use kextunload to unload the kernel extension. You need to run the command as root. Take note this may not be possible for drivers like USB HID since it may be used by other USB HID device. Take note that the kextunload command will lose its effect in the next boot. 
     sudo kextunload -b com.apple.driver.AppleUSBFTDI 
