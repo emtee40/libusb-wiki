@@ -66,7 +66,7 @@ Because Windows does not provide a native <code>poll()</code> function, and cygw
 * <code>WinUSB</code> cannot be used to send an actual reset command to an USB device. This is a limitation of WinUSB. 
 * <code>WinUSB</code> and <code>libusbK</code> cannot be used to set a device configuration that is [http://msdn.microsoft.com/en-us/library/windows/hardware/ff537060.aspx different from the first one]. This is a limitation of KMDF USB I/O Target. 
 * <code>WinUSB</code> does not support multiple concurrent applications (as per the [http://msdn.microsoft.com/en-us/library/windows/hardware/ff540215.aspx MSDN documentation]).
-* <code>WinUSB</code> does not support isochronous transfers under Windows XP/Vista/7/8. WinUSB under Windows 8.1 or later  supports isochronous transfer. Take note as of now libusb Windows only supports isochronous transfer using the usbdk backend (version 1.0.21 and later).
+* <code>WinUSB</code> does not support isochronous transfers under Windows XP/Vista/7/8. WinUSB under Windows 8.1 or later  supports isochronous transfer. Take note as of now libusb Windows only supports isochronous transfer using the usbdk backend (version 1.0.21 and later). libusb-1.0.22 adds isochronous support using libsubK driver. Future version will add isochronous transfer for WinUSB (Windows 8.1/10 or later).
 * With <code>WinUSB</code>, when <code>LIBUSB_RECIPIENT_INTERFACE</code> is used for the transfer, the <code>WinUSB</code> DLL forces the low byte of <code>wIndex</code> to the interface number, regardless of what you set it to. 
 
 This is not a real limitation though, please refer to the [http://www.osronline.com/showthread.cfm?link=223812 OSR threads]. From Tim Roberts answer in that thread:
