@@ -34,7 +34,7 @@ Note however that the scripts are smart enough to tell you if you forgot to crea
 * If bugs were pending to the milestone, that haven't been completed, move them to the next release
 * On release day, close the release task issue
 * Upload the snapshot(s) (if not automated) '''and make sure the latest source tarball is set as the default download''' (which needs to be done manually)
-* Update the project's web page if needed
+* Update the project's web page if needed (point to the latest tarball and Windows binary)
 * Check that the SourceForge tarball download actually works
 * Update and push the index page from [https://github.com/libusb/libusb.github.com]
 * Send a release notification to libusb-devel and linux-usb (optional)
