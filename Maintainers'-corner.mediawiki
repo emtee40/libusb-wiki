@@ -28,7 +28,7 @@ Note however that the scripts are smart enough to tell you if you forgot to crea
 * Run <tt>make distcheck</tt>
 * Run <tt>make docs-upload</tt> in the <tt>/doc</tt> directory
 * Test the release tarball
-* Create the relevant directories at [https://sourceforge.net/projects/libusb/files/releases] and upload the archives
+* Create the relevant directories at [https://sourceforge.net/projects/libusb/files/releases] and [https://github.com/libusb/libusb/releases] and upload the archives as well as Windows binary
 * Don't forget to push the RC/release commit, so that version.h and tags are updated in the public repo
 * If any bugs were pending actual release, close them
 * If bugs were pending to the milestone, that haven't been completed, move them to the next release
@@ -37,14 +37,12 @@ Note however that the scripts are smart enough to tell you if you forgot to crea
 * Update the project's web page if needed
 * Check that the SourceForge tarball download actually works
 * Update and push the index page from [https://github.com/libusb/libusb.github.com]
-* Send a release notification to libusb-devel and linux-usb
-* Announce the release on [http://freecode.com/] on release day
+* Send a release notification to libusb-devel and linux-usb (optional)
 
 = Updating the Wiki content =
 * The github web interface is not the only way to edit the Wiki. All of the Wiki content can also be accessed as a git repository, which can be very convenient if you want to upload a new image, to be referenced on a wiki page.
 * To access the github wiki, just clone <tt>git@github.com:libusb/libusb.wiki.git</tt>.
 
-= Updating the project's pages on SF =
-* This shouldn't be needed, as the homepage is now updated from the <tt>libusb.github.com</tt> github project, but if you need to, see [https://sourceforge.net/apps/trac/sourceforge/wiki/Project%20web]
+
 ----
 <center>[[CC_BY-SA.png|link=http://creativecommons.org/licenses/by-sa/3.0/]]</center>
