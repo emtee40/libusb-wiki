@@ -81,7 +81,7 @@ This is not a real limitation though, please refer to the [http://www.osronline.
 
 == Development Links ==
 
-* [http://msdn.microsoft.com/en-us/library/windows/hardware/ff540174.aspx How to Use WinUSB to Communicate with a USB Device] & [http://msdn.microsoft.com/en-us/library/windows/hardware/ff540283.aspx WinUSB (Winusb.sys) Installation].<br/>Note that the inf file given in the howto has a typo. If you don't change <code>SourceDisksFiles.NTamd64</code> to <code>SourceDisksFiles.amd64</code>, the driver installation will fail to copy the required DLLs on 64 bit systems...
+* [http://download.microsoft.com/download/9/c/5/9c5b2167-8017-4bae-9fde-d599bac8184a/winusb_howto.docx How to Use WinUSB to Communicate with a USB Device] & [https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/winusb-installation WinUSB (Winusb.sys) Installation].<br/>Note that the inf file given in the howto has a typo. If you don't change <code>SourceDisksFiles.NTamd64</code> to <code>SourceDisksFiles.amd64</code>, the driver installation will fail to copy the required DLLs on 64 bit systems...
 * [https://www.osr.com/nt-insider/2009-issue2/using-winusb-user-mode-usb-device-communication/ Using WinUSB for User-Mode to USB Device Communication]
 * [http://msdn.microsoft.com/en-us/library/ff540046.aspx#winusb WinUSB User-Mode Client Support Routines]
 * [http://blogs.msdn.com/usbcoreblog/ Microsoft's USB Core Team Blog] (including resources on instrumenting the USB stack in Windows 7)
