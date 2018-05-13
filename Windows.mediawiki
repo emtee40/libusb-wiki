@@ -68,8 +68,7 @@ Because Windows does not provide a native <code>poll()</code> function, and cygw
 * With <code>WinUSB</code>, when <code>LIBUSB_RECIPIENT_INTERFACE</code> is used for the transfer, the <code>WinUSB</code> DLL forces the low byte of <code>wIndex</code> to the interface number, regardless of what you set it to. 
 
 **This is not a real limitation though, please refer to the [http://www.osronline.com/showthread.cfm?link=223812 OSR threads]. From Tim Roberts answer in that thread:
-<i>One can also argue that this is a security measure.  The USB spec requires that the low byte of wIndex be set to the interface number when the recipient is set to "interface".  Devices that use that field for other purposes are broken.</i>
-
+** <i>One can also argue that this is a security measure.  The USB spec requires that the low byte of wIndex be set to the interface number when the recipient is set to "interface".  Devices that use that field for other purposes are broken.</i>
 
 * HID keyboards and mice cannot be accessed using the native HID driver as Windows reserves exclusive access to them.
 * Multiple HID top level collections are currently not supported (only the first top level collection will be used).
