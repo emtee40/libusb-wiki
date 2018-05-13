@@ -124,6 +124,7 @@ To create projects relying on '''libusb''', please refer to the samples in the <
 * [http://usb4java.org/ usb4java] &mdash; libusb for '''Java'''
 * [http://libusb-java.ch/ LibusbJava] &mdash; Another libusb binding for '''Java'''
 * [https://github.com/LibUsbDotNet/LibUsbDotNet LibUsbDotNet] &mdash; libusb for '''C#''', '''.NET''' and '''Mono'''
+* [https://github.com/zarthcode/Libusbpp Libusbpp] &mdash; libusb for '''C++'''
 * [https://github.com/pyusb/pyusb PyUSB] &mdash; libusb for '''Python'''
 * [http://github.com/vpelletier/python-libusb1 python-libusb1] &mdash; Another '''Python''' ctype-based wrapper
 * [http://sourceforge.net/p/bitpim/code/HEAD/tree/trunk/bitpim/src/native/usb/ BitPim/USB] &mdash; A partial '''Python''' wrapper using swig
