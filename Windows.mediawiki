@@ -82,7 +82,7 @@ This is not a real limitation though, please refer to the [http://www.osronline.
 == Development Links ==
 
 * [http://msdn.microsoft.com/en-us/library/windows/hardware/ff540174.aspx How to Use WinUSB to Communicate with a USB Device] & [http://msdn.microsoft.com/en-us/library/windows/hardware/ff540283.aspx WinUSB (Winusb.sys) Installation].<br/>Note that the inf file given in the howto has a typo. If you don't change <code>SourceDisksFiles.NTamd64</code> to <code>SourceDisksFiles.amd64</code>, the driver installation will fail to copy the required DLLs on 64 bit systems...
-* [http://209.85.229.132/search?q=cache:3tk2Nqp0wfoJ:www.osronline.com/article.cfm%3Farticle%3D532+selecting+configuration+descriptor+winusb Using WinUSB for User-Mode to USB Device Communication]
+* [https://www.osr.com/nt-insider/2009-issue2/using-winusb-user-mode-usb-device-communication/ Using WinUSB for User-Mode to USB Device Communication]
 * [http://msdn.microsoft.com/en-us/library/ff540046.aspx#winusb WinUSB User-Mode Client Support Routines]
 * [http://blogs.msdn.com/usbcoreblog/ Microsoft's USB Core Team Blog] (including resources on instrumenting the USB stack in Windows 7)
 * [http://blogs.msdn.com/iliast/archive/2008/03/10/why-do-we-need-wdf-coinstallers.aspx additional] [http://blogs.msdn.com/iliast/archive/2009/08/13/wdf-logo-requirements-regarding-coinstallers.aspx information] about Windows Co-Installers
