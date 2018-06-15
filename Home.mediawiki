@@ -117,6 +117,7 @@ To create projects relying on '''libusb''', please refer to the samples in the <
 * [https://github.com/Yubico/yubikey-personalization Yubikey Personalization] - Library and command line tool used to personalize YubiKeys.
 * [https://github.com/EttusResearch/uhd USRP Hardware Driver (UHD)] - A cross-platform driver for USRP Software Defined Radios
 * [https://github.com/ktossell/libuvc libuvc] - Library for webcams and other USB Video Class devices
+* [http://dfu-util.sourceforge.net/ dfu-util] - Device Firmware Upgrade Utilities
 * '''And many more!...'''
 
 = Language Bindings =
