@@ -118,6 +118,7 @@ To create projects relying on '''libusb''', please refer to the samples in the <
 * [https://github.com/EttusResearch/uhd USRP Hardware Driver (UHD)] - A cross-platform driver for USRP Software Defined Radios
 * [https://github.com/ktossell/libuvc libuvc] - Library for webcams and other USB Video Class devices
 * [http://dfu-util.sourceforge.net/ dfu-util] - Device Firmware Upgrade Utilities
+* [https://dolphin-emu.org/ Dolphin Emulator] - Emulator for Nintendo video game consoles: GameCube and Wii
 * '''And many more!...'''
 
 = Language Bindings =
