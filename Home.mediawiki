@@ -141,6 +141,7 @@ To create projects relying on '''libusb''', please refer to the samples in the <
 * [https://github.com/gwadej/perl-device-usb Device::USB] &mdash; libusb for '''perl'''
 * [https://github.com/dcuddeback/libusb-sys libusb-sys] and [https://github.com/dcuddeback/libusb-rs libusb-rs] &mdash; libusb for '''Rust'''
 * [https://github.com/oasynnoum/phpmake_usb php-usb] &mdash; libusb for '''php'''
+* [https://github.com/brbx/libusb-d libusb-d] &mdash; libusb binding for '''D'''
 
 = Other Resources =
 
