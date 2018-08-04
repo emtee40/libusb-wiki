@@ -108,7 +108,10 @@ libusb only provides an API for writing software on the host. Of course, if the 
 Yes.<br/>
 libusb can be used for low-level communication with USB Mass Storage Class devices. But in order to access a file on such a device you must first implement Mass Storage Class, SCSI and the particular file system used on the device, most commonly <code>FAT32</code>. 
 
-However, libusb will not do this part for you. But you can find a limited example of how to read a data block through Mass Storage using libusb in the mass_storage test from the [https://github.com/libusb/libusb/blob/master/examples/xusb.c ​xusb.c] sample of the the ​libusb distribution.
+However, libusb will not do this part for you. In a word, do not use libusb for USB mass storage device.
+
+But you can find a limited example of how to read a data block through Mass Storage using libusb in the mass_storage test from the [https://github.com/libusb/libusb/blob/master/examples/xusb.c ​xusb.c] sample of the the ​libusb distribution.
+
 
 === Does libusb support USB 3.0? ===
 
