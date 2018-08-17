@@ -30,9 +30,9 @@ libusb releases can be accessed from the [http://sourceforge.net/projects/libusb
 = Support =
 The preferred way to get support is to use the mailing list. The libusb mailing-list is hosted on Sourceforge. You can subscribe and check the archive [https://lists.sourceforge.net/lists/listinfo/libusb-devel HERE].
 
-For your convenience, [http://marc.info/?l=libusb-devel&r=1&w=2 marc.info] or [http://news.gmane.org/gmane.comp.lib.libusb.devel.general Gmane] may provide a more user-friendly version of the mailing list archives.
+For your convenience, [http://marc.info/?l=libusb-devel&r=1&w=2 marc.info] may provide a more user-friendly version of the mailing list archives.
 
-For historical reasons, libusbx mailing list archive is [https://sourceforge.net/p/libusbx/mailman/libusbx-devel here]. There is a [http://libusbx.1081486.n5.nabble.com/ Nabble archive] as well. 
+For historical reasons, the libusbx mailing list archive can be found [https://sourceforge.net/p/libusbx/mailman/libusbx-devel here]. 
 
 You are also encouraged to check the [https://github.com/libusb/libusb/wiki/_pages Wiki Pages] for topics of interest.
 
