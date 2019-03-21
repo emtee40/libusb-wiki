@@ -132,7 +132,7 @@ For Mac OS X, xHCI support has only been introduced recently with Mac OS X Mount
 We will try to help you sort issues related to USB 3.0 usage where possible. But before you contact us, if on Windows 7, please make sure you test with the latest USB 3.0 drivers available from your xHCI provider, or, if on Linux, please make sure you test with the latest kernel, as the xHCI driver is regularly being updated there.
 
 === Does libusb support USB HID devices? ===
-If your application will revolve around HID access, you are strongly encouraged to try to use the ​[http://www.signal11.us/oss/hidapi/ HIDAPI library] by Signal 11 Software, which is also cross-platform. It uses native HID API under Windows and Mac OS X. It use either hidraw or libusb as the backend under Linux.
+If your application will revolve around HID access, you are strongly encouraged to try to use the ​[https://github.com/signal11/hidapi HIDAPI library] by Signal 11 Software, which is also cross-platform. It uses native HID API under Windows and Mac OS X. It use either hidraw or libusb as the backend under Linux.
 
 libusb was widely used to access USB HID device under Linux for historical reasons so there may be use cases to use libusb for HID device due to existing code base or for platforms without HIDAPI support. However, the level of support as well as the ease of access of HID devices, depends on the platform you will be running libusb on. 
 
