@@ -139,7 +139,7 @@ To create projects relying on '''libusb''', please refer to the samples in the <
 * [https://github.com/littledan/Factor/tree/master/extra/libusb '''Factor''' libusb bindings]
 * [https://github.com/nimious/io-usb io-usb] &mdash; libusb for '''Nim'''
 * [https://metacpan.org/pod/USB::LibUSB USB::LibUSB] &mdash; libusb for '''perl'''
-* [https://github.com/dcuddeback/libusb-sys libusb-sys] and [https://github.com/dcuddeback/libusb-rs libusb-rs] &mdash; libusb for '''Rust'''
+* [https://github.com/dcuddeback/libusb-sys libusb-sys], [https://github.com/dcuddeback/libusb-rs libusb-rs] and [https://github.com/a1ien/rusb rusb] &mdash; libusb for '''Rust'''
 * [https://github.com/oasynnoum/phpmake_usb php-usb] &mdash; libusb for '''php'''
 * [https://github.com/brbx/libusb-d libusb-d] &mdash; libusb binding for '''D'''
 * [https://github.com/tonyrog/libusb Erlang libusb] &mdash; libusb binding for '''Erlang'''
