@@ -143,7 +143,7 @@ To create projects relying on '''libusb''', please refer to the samples in the <
 * [https://github.com/oasynnoum/phpmake_usb php-usb] &mdash; libusb for '''php'''
 * [https://github.com/brbx/libusb-d libusb-d] &mdash; libusb binding for '''D'''
 * [https://github.com/tonyrog/libusb Erlang libusb] &mdash; libusb binding for '''Erlang'''
-
+* [https://github.com/eiffel-wrap-c/wrap_libusb Eiffel libusb] &mdash; libusb binding for '''Eiffel'''
 = Other Resources =
 
 * '''[[Maintainers'-Corner|Maintainers' Corner]]'''
