@@ -25,9 +25,9 @@ Supported systems are all Windows platforms, starting with Windows XP, and inclu
 * Windows 2003 (Microsoft does not support WinUSB on 32bit/64bit Windows 2003)
 * Windows XP 64 bit (Microsoft does not officially support WinUSB on 64bit Windows XP)
 
-=== USB 3.0 Support ===
+=== USB 3.x Support ===
 
-libusb supports USB 3.0 controllers and devices on Windows. Proprietary vendor controller drivers for Windows 7 and earlier as well as the Microsoft controller xHCI driver for Windows 8 are supported. If you are not using Windows 8 or later, you will be using vendor driver. Make sure you upgrade to the latest version of the driver if you encounter problems. 
+libusb supports USB 3.x controllers and devices on Windows. Proprietary vendor controller drivers for Windows 7 and earlier as well as the Microsoft controller xHCI driver for Windows 8 are supported. If you are not using Windows 8 or later, you will be using vendor driver. Make sure you upgrade to the latest version of the driver if you encounter problems. 
 
 If you are using a NEC/Renesas USB 3.0 controller, such as the fairly widespread <code>uPD720200</code>/<code>uPD720200A</code>, remember to make sure that your controller drivers are [http://www.station-drivers.com/index.php/10-drivers/42-renesas-nec version 2.1.16.0 or later]. Older versions of the drivers are known to have a bug that prevents access to USB devices.
 
