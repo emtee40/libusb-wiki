@@ -83,7 +83,7 @@ Because Windows does not provide a native <code>poll()</code> function, and cygw
 * [https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/using-winusb-api-to-communicate-with-a-usb-device How to Use WinUSB to Communicate with a USB Device] & [https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/winusb-installation WinUSB (Winusb.sys) Installation].<br/>Note that the inf file given in the howto has a typo. If you don't change <code>SourceDisksFiles.NTamd64</code> to <code>SourceDisksFiles.amd64</code>, the driver installation will fail to copy the required DLLs on 64 bit systems...
 * [https://www.osr.com/nt-insider/2009-issue2/using-winusb-user-mode-usb-device-communication/ Using WinUSB for User-Mode to USB Device Communication]
 * [http://msdn.microsoft.com/en-us/library/ff540046.aspx#winusb WinUSB User-Mode Client Support Routines]
-* [http://blogs.msdn.com/usbcoreblog/ Microsoft's USB Core Team Blog] (including resources on instrumenting the USB stack in Windows 7)
+* [https://techcommunity.microsoft.com/t5/microsoft-usb-blog/bg-p/MicrosoftUSBBlog Microsoft's USB Core Team Blog] 
 * [http://blogs.msdn.com/iliast/archive/2008/03/10/why-do-we-need-wdf-coinstallers.aspx additional] [http://blogs.msdn.com/iliast/archive/2009/08/13/wdf-logo-requirements-regarding-coinstallers.aspx information] about Windows Co-Installers
 * [http://msdn.microsoft.com/en-us/library/x98tx3cf.aspx Finding Memory Leaks Using the CRT Library]
 * [http://libusbk.sourceforge.net/UsbK3/index.html libusbK documentation]
