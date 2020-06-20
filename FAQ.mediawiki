@@ -164,7 +164,7 @@ Yes.<br>
 Please refer to the Windows CE related information in the following file.<br>
 [https://github.com/libusb/libusb/blob/master/INSTALL_WIN.txt]
 
-=== Does libusb support Android ===
+=== Does libusb support Android? ===
 
 Yes.</br>
 However, this will only work if your device has USB host support (also known as USB On-The-Go) and if you have sufficient privileges to run in host mode (which usually requires a "rooted" device).
