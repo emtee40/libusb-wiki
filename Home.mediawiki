@@ -101,7 +101,7 @@ To create projects relying on '''libusb''', please refer to the samples in the <
 * [http://sigrok.org sigrok] - A signal analysis software suite for a very large range of devices
 * [https://github.com/airspy/airspyone_host airspy host] AirSpy's usemode driver and associated tools
 * [http://openkinect.org/ OpenKinect] - Library and appplications for the Microsoft Xbox Kinect device
-* [http://www.openni.org/ OpenNI] - An Open Source SDK for 3D sensing 
+* [https://github.com/OpenNI/OpenNI OpenNI] - An Open Source SDK for 3D sensing 
 * [https://github.com/bluekitchen/btstack BTstack] - A Portable User-Space Bluetooth Stack
 * [http://usbpicprog.org/ UsbPicProg] - An Open Source PIC programmer
 * [http://www.freedesktop.org/wiki/Software/fprint/ fprint] - A fingerprint scanning application and library
