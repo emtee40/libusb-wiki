@@ -19,6 +19,7 @@ The pre-built Windows binaries are provided AS IS for your convenience, generate
 
 Note that these archives are provided in the <code>7z</code> format so you may have to install ​[http://www.7-zip.org/ 7-zip].
 
+
 [https://github.com/microsoft/vcpkg vcpkg] now also include [https://github.com/microsoft/vcpkg/tree/master/ports/libusb libusb ports].
 
 == Supported Environments ==
