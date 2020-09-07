@@ -1,4 +1,7 @@
-= Changes for the libusbx &rarr; libusb mergeback =
+Milestones:
+https://github.com/libusb/libusb/milestones
+
+== Changes for the libusbx &rarr; libusb mergeback ==
 
 === DNS ===
 * http://libusb.info -> main site '''[DONE]'''
