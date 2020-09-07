@@ -6,7 +6,6 @@ TODO: talk about time spread and stuff: 4 people trying to test a "you just have
 
 == Example of a good request for help ==
 
-TODO: image of a good e-mail example with labels ([1], [2], ...)
 * Make sure you subscribe to libusb-devel and mail the list rather than the developers
 * Check the API for return values
 * Always tell us the OS and OS version you use
