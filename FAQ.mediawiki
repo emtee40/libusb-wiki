@@ -172,7 +172,7 @@ Yes.</br>
 However, this will only work if your device has USB host support (also known as USB On-The-Go) and if you have sufficient privileges to run in host mode (which usually requires a "rooted" device).
 Please check the [https://github.com/libusb/libusb/tree/master/android android] directory for more info.
 
-Currently there are also multiple issues reported by the user. Please check the existing tickets as well to see if you can sort out the issues from the hints in the tickets. 1.0.24 version or later should be used.
+Currently there are also multiple issues reported by the user. Please check the existing tickets as well to see if you can sort out the issues from the hints in the tickets. Avoid using version 1.0.23. Version 1.0.22 or 1.0.24 version should be used as of now (Dec 2020).
 
 === Does libusb work under Virtual Machines? ===
 
