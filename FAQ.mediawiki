@@ -121,15 +121,13 @@ Yes (as long as the underlying OS supports the corresponding USB version too).
 
 If you encounter such an issue, you should report it to the libusb mailing-list.
 
-But please note that USB 3.x is fairly new, so some Operating Systems are still catching up.
+But please take note of the OS support of USB 3.x/USB4.
 
-For instance, USB 3.0 support for Windows 7 and earlier is very dependent on individual drivers, which are provided by the USB controller manufacturer, and not Microsoft. Some of these have been known to have bugs. Only Windows 8/8.1/10 and later have an official USB 3.0 stack that originates from Microsoft.
+For instance, USB 3.0 support for Windows 7 and earlier is very much dependent on individual drivers, which are provided by the USB controller manufacturer, and not Microsoft. Some of these have been known to have bugs. Only Windows 8/8.1/10 and later have an official USB 3.0 stack that originates from Microsoft.
 
-For Linux, the xHCI driver may also not be as mature as the other host controller driver. Things should be much better now in 2020.  Please try to upgrade to later version of the kernel whenever possible to have better support.
+For Linux, the xHCI driver may also not be as mature as the other host controller driver if you use older kernel versions. Please try to upgrade to later version of the kernel whenever possible to have better support.
 
-For Mac OS X, xHCI support has only been introduced recently with Mac OS X Mountain Lion, so USB 3.0 support may not be that mature either. Things should be better now in 2020. Whenever possible, please upgrade to later version of Mac OS X for better support.
-
-We will try to help you sort issues related to USB 3.x usage where possible. But before you contact us, if on Windows 7, please make sure you test with the latest USB 3.x drivers available from your xHCI provider, or, if on Linux, please make sure you test with the latest kernel, as the xHCI driver is regularly being updated there.
+For Mac OS X, xHCI support may not be so good in older versions like Mac OS X Mountain Lion. Whenever possible, please upgrade to later version of Mac OS X for better support.
 
 === Does libusb support USB HID devices? ===
 If your application will revolve around HID access, you are strongly encouraged to try to use the ​[https://github.com/libusb/hidapi HIDAPI library], which is also cross-platform. It uses native HID API under Windows and Mac OS X. It use either hidraw or libusb as the backend under Linux.
