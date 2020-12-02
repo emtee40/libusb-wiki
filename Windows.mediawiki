@@ -54,7 +54,7 @@ If you are using a NEC/Renesas USB 3.0 controller, such as the fairly widespread
 
 === Windows 8.x/10 Support ===
 
-libusb was tested under Windows 8 and Windows 8.1, for both 32 and 64 bit, and no issues were found.
+libusb was tested under Windows 8 and Windows 8.1, for both 32 and 64 bit.
 
 === .NET support ===
 
