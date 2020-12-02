@@ -164,13 +164,15 @@ Yes.<br>
 Please refer to the Windows CE related information in the following file.<br>
 [https://github.com/libusb/libusb/blob/master/INSTALL_WIN.txt]
 
+Note: Windows CE support has been removed in 1.0.24.
+
 === Does libusb support Android? ===
 
 Yes.</br>
 However, this will only work if your device has USB host support (also known as USB On-The-Go) and if you have sufficient privileges to run in host mode (which usually requires a "rooted" device).
 Please check the [https://github.com/libusb/libusb/tree/master/android android] directory for more info.
 
-Currently there are also multiple issues reported by the user. Please check the existing tickets as well to see if you can sort out the issues from the hints in the tickets.
+Currently there are also multiple issues reported by the user. Please check the existing tickets as well to see if you can sort out the issues from the hints in the tickets. 1.0.24 version or later should be used.
 
 === Does libusb work under Virtual Machines? ===
 
