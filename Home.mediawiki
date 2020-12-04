@@ -55,8 +55,6 @@ You are also encouraged to check the [https://github.com/libusb/libusb/wiki/_pag
 * OpenBSD and NetBSD &#91;'''status''': EXPERIMENTAL&#93;
 ** Only device with <code>ugen</code> driver are supported
 
-* Windows CE -- &#91;'''status''': EXPERIMENTAL&#93;
-
 * Android -- &#91;'''status''': EXPERIMENTAL&#93;
 
 * Solaris support was added in libusb-1.0.21
