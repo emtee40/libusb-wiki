@@ -44,7 +44,7 @@ You are also encouraged to check the [https://github.com/libusb/libusb/wiki/_pag
 ** Any modern Linux system with <code>usbfs</code>.
 
 * Mac OS X &#91;'''status''': Stable&#93;
-** Any modern version of Mac OS X (PowerPC or x86 either in 32 and 64 bits)
+** Any modern version of Mac OS X (PowerPC or x86 either in 32 and 64 bits or Apple Silicon)
 ** Note: for USB 3.0 port,please use Mac OS X Mountain Lion 10.8.2 or later.
 ** Note: the device should not be bound to a kernel driver. You can use a codeless kext to achieve that if there is a kernel driver (eg: HID or USB Mass Storage) which already binds to the device.
 * [[Windows]] &#91;'''status''': Stable&#93;
