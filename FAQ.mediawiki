@@ -81,7 +81,11 @@ Once you finish the editing, you can issue the following two commands and everyt
     sudo kextload -bundle com.apple.driver.AppleUSBFTDI
 
 Reference: 
-* [http://alvarop.com/2014/01/using-busblaster-openocd-on-osx-mavericks/]
+* [http://alvarop.com/2014/01/using-busblaster-openocd-on-osx-mavericks/] (Dead link now).
+* [https://embeddedartistry.com/blog/2017/06/26/osx-getting-pesky-ftdi-debugging-devices-to-work/]
+Take note the location may be different in different macOS version. 
+
+For macOS Catalina(10.15) and later, Apple FTDI driver is now a Driverkit extension named com.apple.DriverKit-AppleUSBFTDI.
 
 === How to use libusb under Windows? ===
 
