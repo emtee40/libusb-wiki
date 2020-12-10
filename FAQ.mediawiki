@@ -196,8 +196,7 @@ However, VMs, especially VirtualBox, may have not very good implementation of th
 
 * The internal structure of usb_dev_handle is different from libusb-0.1. Of course, since this is a purely internal structure, that shouldn't cause any problems. In reality, some libusb-0.1 users make assumptions about what is inside (bad programming practice) and those assumptions are no longer true, resulting in broken software.
 
-* libusb-1.0 and libusb-0.1-compat may be slower in listing the devices under Linux compared to libusb-0.1. Please refer to ticket https://github.com/libusb/libusb/issues/237. 
-libusb 0.1 finds devices through devtmpfs by scanning /dev/bus/usb. These device nodes are likely to show up quite soon after the device is enumerated. libusb 1.0 listens for uevents from the kernel through a netlink socket. There are quite a few uevents that the kernel sends out while setting up a new device, only one of which tells libusb that a new device has arrived. This also happens in a dedicated thread, so there may be scheduling latencies at play. One potential workaround is to build libusb with netlink and not udev.
+* libusb-1.0 and libusb-0.1-compat may be slower in listing the devices under Linux compared to libusb-0.1. Please refer to ticket https://github.com/libusb/libusb/issues/237. libusb 0.1 finds devices through devtmpfs by scanning /dev/bus/usb. These device nodes are likely to show up quite soon after the device is enumerated. libusb 1.0 listens for uevents from the kernel through a netlink socket. There are quite a few uevents that the kernel sends out while setting up a new device, only one of which tells libusb that a new device has arrived. This also happens in a dedicated thread, so there may be scheduling latencies at play. One potential workaround is to build libusb with netlink and not udev.
 
 ----
 <center>[[CC_BY-SA.png|link=http://creativecommons.org/licenses/by-sa/3.0/]]</center>
