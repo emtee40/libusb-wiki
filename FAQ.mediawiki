@@ -158,24 +158,20 @@ Windows RT is locked by Microsoft, which means that users cannot install the app
 === Does libusb support Apple iOS device? ===
 
 No.
-=== Does libusb support MacBook Pro (Apple Sillicon, M1, 2020) ===
+=== Does libusb support Apple Sillicon based Mac ===
 
 Yes.<br>
 
-But for some packages justlike pyusb need libusb built for x86_64 in addition to arm64.
-
-In the pyusb case, if you install libusb by Macports, pip or Homebrew, maybe it will cause some problem just like NoBackendError.
-(Until 14th,Dec.,2020)
-
-So, one of methods installing libusb correctly is as follows:
-
+One way to build libusb binary for both x86_64 in addition to arm64 is as following if you do not use homebrew.
 1. Install Xcode Ver12.2<br>
 2. Clone the newest libusb from git<br>
 3. Open the Xcode project from /libusb-1.0.24/Xcode/libusb.xcodeproj<br>
 4. Choose the build option to "Any Mac" which means both ARM64 and X86_64<br>
 5. Edit the Run Scheme to Release and then build the project.<br>
 6. Show the "libusb-1.0.0.dylib" in Finder then copy it to /usr/local/lib<br>
-7. Copy the "libusb.h" to /usr/local/include/libusb-1.0 (May be unnecessary)<br>
+7. Copy the "libusb.h" to /usr/local/include/libusb-1.0 <br>
+
+If you use Homebrew, you can use x86_64 and arm64 homebrew at the same time using different directories . Please follow the official Homebrew instructions.
 
 === Does libusb support Windows CE based device? ===
 
