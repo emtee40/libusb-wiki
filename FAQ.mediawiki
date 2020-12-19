@@ -173,6 +173,9 @@ One way to build libusb binary for both x86_64 in addition to arm64 is as follow
 
 If you use Homebrew, you can use x86_64 and arm64 homebrew at the same time using different directories . Please follow the official Homebrew instructions.
 
+=== Does libusb support Hackintosh? ===
+Not officially supported. If you encounter issues, please check if the issues are present in official Apple Macs or not.
+
 === Does libusb support Windows CE based device? ===
 
 Yes.<br>
@@ -190,7 +193,8 @@ Please check the [https://github.com/libusb/libusb/tree/master/android android] 
 
 Currently there are also multiple issues reported by the user. Please check the existing tickets as well to see if you can sort out the issues from the hints in the tickets. Version 1.0.24 has made quite some improvements on Android side and you should use version 1.0.24 or later.
 
-An important tip of using the API  libusb_wrap_sys_device under Android is mentioned[https://marc.info/?l=libusb-devel&m=160832455725344&w=2 here].
+An important tip of using the API  libusb_wrap_sys_device under Android is mentioned[https://marc.info/?l=libusb-devel&m=160832455725344&w=2 
+ here].
 It is also mentioned in [https://github.com/libusb/libusb/issues/717 Issue #717].
 
 === Does libusb work under Virtual Machines? ===
