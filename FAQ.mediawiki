@@ -85,7 +85,7 @@ Reference:
 * [https://embeddedartistry.com/blog/2017/06/26/osx-getting-pesky-ftdi-debugging-devices-to-work/]
 Take note the location may be different in different macOS version. 
 
-For macOS Catalina(10.15) and later, Apple FTDI driver is now a Driverkit extension named com.apple.DriverKit-AppleUSBFTDI.
+For macOS Catalina(10.15) and later, Apple FTDI driver is now a Driverkit extension named com.apple.DriverKit-AppleUSBFTDI. (Note: it seems to work with libusb out of the box under Mac Mini M1 Big Sur even though the driver and the serial port are present).
 
 === How to use libusb under Windows? ===
 
