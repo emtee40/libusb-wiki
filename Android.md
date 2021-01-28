@@ -4,5 +4,5 @@ The support in the main tree currently relies on access to the usb device files 
 
 These forks also have implemented some android support:
 
-- https://github.com/SpecLad/libusb-android
+- https://github.com/SpecLad/libusb-android (uses Java interface, not updated since 2012)
 - https://github.com/kuldeepdhaka/libusb/tree/android-open2
