@@ -67,6 +67,8 @@ Note: FreeBSD 8 and above include a FreeBSD-specific reimplementation of the lib
 
 IBM has a partial port of libusb for AIX as well. Please refer to the IBM website [https://www.ibm.com/developerworks/aix/library/au-aix-libusb/index.html here].
 
+If you would like to discuss the Android implementation, then contribute to an '''[[Android|Android Backend]]''' page.
+
 If you are interested in porting to other platforms, the [https://github.com/libusb/libusb/blob/master/PORTING PORTING] file tells you where to start. We are more than happy to help out here, please write to the mailing list with your questions and feedback.
 
 == Accessing the Source ==
