@@ -1,11 +1,14 @@
-There is some existing android support in the main tree.  Information on this support is available at https://github.com/libusb/libusb/blob/master/android/README .
+Does libusb support Android?
+Yes. However, this will only work if your device has USB host support (also known as USB On-The-Go) and if you have sufficient privileges to run in host mode. Please check the android directory for more info.
+https://github.com/libusb/libusb/blob/master/android/README
 
-One approach is to open the device via the regular Android API, get the FileDescriptor and use it in libusb with `libusb_wrap_sys_device()`. A bit of a hack, but it works.
+Currently there are also multiple issues reported by the user. Please check the existing tickets as well to see if you can sort out the issues from the hints in the tickets. Version 1.0.24 has made quite some improvements on Android side and you should use version 1.0.24 or later.
 
-The support in the main tree currently relies on access to the usb device files being enabled via other means.  It is also possible to reliably access USB without root on Android by using the JNI.
+An important tip of using the API libusb_wrap_sys_device under Android is mentioned in Issue [#7171](https://github.com/libusb/libusb/issues/717) and [Pull Request #830](https://github.com/libusb/libusb/pull/830).
+
+Another approach is by using the JNI.
 
 These forks also have implemented some android support:
-
 - https://github.com/SpecLad/libusb-android (uses Java interface, not updated since 2012)
 - https://github.com/kuldeepdhaka/libusb/tree/android-open2
 - https://gitlab.com/madresistor/libusb/tree/android
