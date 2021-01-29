@@ -6,9 +6,3 @@ Currently there are also multiple issues reported by the user. Please check the 
 
 An important tip of using the API libusb_wrap_sys_device under Android is mentioned in Issue [#7171](https://github.com/libusb/libusb/issues/717) and [Pull Request #830](https://github.com/libusb/libusb/pull/830).
 
-Another approach is by using the JNI.
-
-These forks also have implemented some android support:
-- https://github.com/SpecLad/libusb-android (uses Java interface, not updated since 2012)
-- https://github.com/kuldeepdhaka/libusb/tree/android-open2
-- https://gitlab.com/madresistor/libusb/tree/android
