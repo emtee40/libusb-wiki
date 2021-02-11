@@ -45,6 +45,10 @@ You have to [https://lists.sourceforge.net/lists/listinfo/libusb-devel subscribe
 
 == Running libusb ==
 
+=== Can I run libusb applications on Linux when there is already a kernel driver attached to it? ===
+
+Yes you can. Please detach the kernel driver by calling libusb_detach_kernel_driver() so that you can use libusb. Please take note you need to have the correct privilege to do that. Take note this function is only available for Linux.
+
 === Can I run libusb applications on Linux without root privilege? ===
 
 Yes.<br/>
