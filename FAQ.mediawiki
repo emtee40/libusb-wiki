@@ -39,6 +39,8 @@ If you modify the source, then you must make any changes you applied to libusb p
 
 Please read the libusb [https://github.com/libusb/libusb/wiki/Troubleshooting Troubleshooting] page and use the [https://github.com/libusb/libusb/wiki#wiki-Support mailing list] for support.
 
+Please also read the Wiki pages including this FAQ page as well as [http://libusb.sourceforge.net/api-1.0/libusb_caveats.html libusb caveats]
+
 === I tried to post to the libusb mailing list but it failed. Why? ===
 
 You have to [https://lists.sourceforge.net/lists/listinfo/libusb-devel subscribe] to the mailing list in order to post.
