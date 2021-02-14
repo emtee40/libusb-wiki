@@ -174,10 +174,10 @@ No.
 
 Yes.<br>
 
-One way to build libusb binary for both x86_64 in addition to arm64 is as following if you do not use homebrew.
-1. Install Xcode Ver12.2<br>
+One way to build libusb binary for both x86_64 in addition to arm64 is as following if you do not use homebrew.<br>
+1. Install Xcode Ver12.2 or later<br>
 2. Clone the newest libusb from git<br>
-3. Open the Xcode project from /libusb-1.0.24/Xcode/libusb.xcodeproj<br>
+3. Open the Xcode project from /libusb/Xcode/libusb.xcodeproj<br>
 4. Choose the build option to "Any Mac" which means both ARM64 and X86_64<br>
 5. Edit the Run Scheme to Release and then build the project.<br>
 6. Show the "libusb-1.0.0.dylib" in Finder then copy it to /usr/local/lib<br>
