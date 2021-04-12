@@ -20,6 +20,8 @@ The pre-built Windows binaries are provided AS IS for your convenience, generate
 
 Note that these archives are provided in the <code>7z</code> format so you may have to install ​[http://www.7-zip.org/ 7-zip].
 
+You may want to build from source if you encounter compatibility issues with the pre-built binary.
+
 ===vcpkg port ===
 [https://github.com/microsoft/vcpkg vcpkg] now includes [https://github.com/microsoft/vcpkg/tree/master/ports/libusb libusb ports].
 
@@ -35,8 +37,8 @@ You can download and install libusb using the vcpkg dependency manager:
 
 The libusb port in vcpkg is kept up to date by Microsoft team members and community contributors. If the version is out of date, please create an issue or pull request on the [https://github.com/Microsoft/vcpkg vcpkg] repository.
 
-===msys2 package ===
-msys2 has the [https://packages.msys2.org/base/mingw-w64-libusb libusb package]. Please contact msys2 project if you encountered issues with the msys2 package.
+===msys2 MinGW-w64 32bit/64bit package ===
+msys2 has the [https://packages.msys2.org/base/mingw-w64-libusb libusb package]. Please contact msys2 project if you encountered issues with the msys2 package. It is recommended you use pkg-config (libusb-1.0.pc) if you use MSYS2 or other MinGW-w64 distributions.
 
 == Supported Environments ==
 
