@@ -49,11 +49,7 @@ Note: Windows XP support is dropped in libusb 1.0.24.
 
 === USB 3.x Support ===
 
-libusb supports USB 3.x controllers and devices on Windows. Proprietary vendor controller drivers for Windows 7 and earlier as well as the Microsoft controller xHCI driver for Windows 8 are supported. If you are not using Windows 8 or later, you will be using vendor driver. Make sure you upgrade to the latest version of the driver if you encounter problems. 
-
-=== Windows 8.x/10 Support ===
-
-libusb was tested under Windows 8 and Windows 8.1, for both 32 and 64 bit.
+libusb supports USB 3.x controllers and devices on Windows. Proprietary vendor controller drivers for Windows 7 and earlier as well as the Microsoft controller xHCI driver for Windows 8/8.1/10 are supported. If you are are using Windows 7 or earlier version, you will be using vendor driver. Make sure you upgrade to the latest version of the driver if you encounter problems. 
 
 === .NET support ===
 
