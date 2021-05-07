@@ -81,7 +81,7 @@ Note that if your device is using libusb-win32 driver (libusb0.sys), you will al
 
 === Development Considerations ===
 
-The handling of composite devices under Windows is done with multiple drivers, that are children of the <code>usbccgp.sys</code> driver (Composite Generic Parent), as this is the default for the OS. For more info, see ''"2. How Windows handles a composite device"'' at [http://forum.silabs.com/ubbthreads.php?ubb=showflat&Number=39797]. If needed, it is also possible to replace the composite parent driver to access the device.
+The handling of composite devices under Windows is done with multiple drivers, that are children of the <code>usbccgp.sys</code> driver (Composite Generic Parent), as this is the default for the OS. If needed, it is also possible to replace the composite parent driver to access the device. Zadig can be used for this purpose.
 
 Because Windows does not provide a native <code>poll()</code> function, and cygwin is the only development environment that provides such a call, the use of libusb file descriptors with <code>poll()</code> on cygwin is '''NOT''' supported. In a future version of libusb, we should provide better handling of native Windows events, but this will require a redesign of the libusb API, so it probably won't occur before libusb 2.0.
 
