@@ -53,7 +53,7 @@ libusb supports USB 3.x controllers and devices on Windows. Proprietary vendor c
 
 === .NET support ===
 
-A <code>.NET</code> version of libusb, called [http://libusbdotnet.sourceforge.net/V2/Index.html LibUsbDotNet], based on libusb 1.0, has been developed by Travis Lee Robinson. If you plan to use libusb in a <code>.NET</code> project, make sure you check out the latest release at [https://github.com/LibUsbDotNet/LibUsbDotNet github].
+A <code>.NET</code> version of libusb, called [http://libusbdotnet.sourceforge.net/V2/Index.html LibUsbDotNet], based on libusb 1.0. If you plan to use libusb in a <code>.NET</code> project, make sure you check out the latest release at [https://github.com/LibUsbDotNet/LibUsbDotNet github].
 
 == How to use libusb on Windows ==
 
