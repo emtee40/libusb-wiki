@@ -77,7 +77,7 @@ libusb_context * ctx = NULL;
 libusb_init(&ctx);
 libusb_set_option(ctx, LIBUSB_OPTION_USE_USBDK);
 ```
-Note that if you install the libusb-win32 driver manually, you will also need to install the libusbK DLL, as all libusb-win32 accesses are done through it. One way to install/update libusbK.dll is to install libusbk development kit (libusbK-x.x.x.x-setup.exe from [http://sourceforge.net/projects/libusbk/ Sourceforge site] and choose to update the system files during the installation. However the support of libusb-win32/libusb0.sys (especially the filter mode) is not working well now, therefore you should not use libusb-win32/libusb0.sys for now.
+Note that if your device is using libusb-win32 driver (libusb0.sys), you will also need to install the libusbK DLL, as all libusb0.sys accesses are done through it. One way to install/update libusbK.dll is to install libusbk development kit (libusbK-x.x.x.x-setup.exe from [http://sourceforge.net/projects/libusbk/ Sourceforge site] and choose to update the system files during the installation. However the support of libusb-win32/libusb0.sys (especially the filter mode) is not working well now, therefore you should not use libusb0.sys for now and you should upgrade to WinUSB or libusbk instead whenever possible.
 
 === Development Considerations ===
 
