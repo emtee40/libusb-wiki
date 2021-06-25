@@ -100,6 +100,8 @@ Take note the location may be different in different macOS version.
 
 For macOS Catalina(10.15) and later, Apple FTDI driver is now a Driverkit extension named com.apple.DriverKit-AppleUSBFTDI. (Note: it seems to work with libusb out of the box under Mac Mini M1 Big Sur even though the driver and the serial port are present).
 
+Updates on June 2021: with the merging of pull request #921, support for detaching kernel drivers with authorization has been added. This will be included in the upcoming 1.0.25 release. Take note the underlying macOS capture APIs only work on the whole device and not on individual interfaces. So this will force all the kernel extensions (drivers) bound to all the interfaces of a USB Composite devices to be released (Issue #920).
+
 === How to use libusb under Windows? ===
 
 Please refer to the following Wiki page:<br>
