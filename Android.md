@@ -1,4 +1,4 @@
-== Does libusb support Android?==
+# Does libusb support Android?
 Yes. However, this will only work if your device has USB host support (including USB On-The-Go dual role) and if the correct permissions are obtained from the user or system image. Please check the android directory for more info.
 https://github.com/libusb/libusb/blob/master/android/README
 
@@ -8,6 +8,6 @@ An important tip of using the API libusb_wrap_sys_device under Android is mentio
 
 Please also look at [Pullrequest #874](https://github.com/libusb/libusb/pull/874) for future improvement.
 
-== Termux ==
+# Termux
 Please check here to see if it works for you or not.
 https://wiki.termux.com/wiki/Termux-usb
