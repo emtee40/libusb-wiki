@@ -49,7 +49,7 @@ You have to [https://lists.sourceforge.net/lists/listinfo/libusb-devel subscribe
 
 === Can I run libusb application on Linux when there is already a kernel driver attached to it? ===
 
-Yes you can. Please detach the kernel driver by calling libusb_detach_kernel_driver() so that you can use libusb. Please take note you need to have the correct privilege to do that. Take note this function is only available for Linux.
+Yes you can. Please detach the kernel driver by calling libusb_detach_kernel_driver() so that you can use libusb. Please take note you need to have the correct privilege to do that. Take note this function is only available for Linux. Better way is to use udev rules to unbind the kernel driver.
 
 === Can I run libusb application on Linux when there is already another application which has already claimed the interface? ===
 You have to exit the other application. If not and libusb_set_configuration() and libusb_claim_interface() will fail. Take note if the other application is the kernel driver, you have to detach the kernel driver.
