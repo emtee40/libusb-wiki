@@ -8,6 +8,11 @@ An important tip of using the API libusb_wrap_sys_device under Android is mentio
 
 Please also look at [Pullrequest #874](https://github.com/libusb/libusb/pull/874) for future improvement.
 
-# Termux
+# Alternative ways
+https://github.com/mcuee/libusb-1.0.23-android-helper-service-patch (used by AnotherTerm)
+
+# Termux Android
 Please check here to see if it works for you or not.
 https://wiki.termux.com/wiki/Termux-usb
+https://github.com/green-green-avk/LibUsbManager
+https://github.com/normanr/termux-libusb-bridge
