@@ -13,6 +13,9 @@ https://github.com/mcuee/libusb-1.0.23-android-helper-service-patch (used by Ano
 
 # Termux Android
 Please check here to see if it works for you or not.
+
 https://wiki.termux.com/wiki/Termux-usb
+
 https://github.com/green-green-avk/LibUsbManager
+
 https://github.com/normanr/termux-libusb-bridge
