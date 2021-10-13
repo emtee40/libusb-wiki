@@ -28,9 +28,9 @@ You can download and install libusb using the vcpkg dependency manager:
 
     git clone https://github.com/Microsoft/vcpkg.git
     cd vcpkg
-    ./bootstrap-vcpkg.bat
-    ./vcpkg integrate install
-    ./vcpkg install libusb
+    .\bootstrap-vcpkg.bat
+    .\vcpkg integrate install
+    .\vcpkg install libusb
 
 The libusb port in vcpkg is kept up to date by Microsoft team members and community contributors. If the version is out of date, please create an issue or pull request on the [https://github.com/Microsoft/vcpkg vcpkg] repository.
 
