@@ -12,12 +12,12 @@ Pre-built binary snapshots are provided in the [http://sourceforge.net/projects/
 
 The pre-built Windows binaries are provided AS IS for your convenience, generated for the following environments:
 
-* Microsoft Visual Studio and DDK/WDK &rarr; MS32(32 bit) and MS64 (64 bit) directories
-* MinGW -> MinGW32 (32 bit) and MinGW64 (64 bit) directories 
+* Microsoft Visual Studio; MS32(32 bit) and MS64 (64 bit) directories
+* MinGW -> MinGW32 (32 bit) and MinGW64 (64 bit) directories. 
 
 Note that these archives are provided in the <code>7z</code> format so you may have to install ​[http://www.7-zip.org/ 7-zip].
 
-You may want to build from source if you encounter compatibility issues with the pre-built binary.
+You may want to build from source if you encounter compatibility issues with the pre-built binary. We  recommned either Visual Studio or MinGW-w64 based toolchain like MSYS2. Take note MinGW.org toolchain is not supported. clang support patches are welcome.Patches to add support for other toolchains (including MinGW.org) may be accepted after review even though these toolchains are not officially supported. 
 
 ===vcpkg port ===
 [https://github.com/microsoft/vcpkg vcpkg] now includes [https://github.com/microsoft/vcpkg/tree/master/ports/libusb libusb ports].
