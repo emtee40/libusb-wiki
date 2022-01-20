@@ -8,11 +8,11 @@ Take note libusb-win32 and libusbK are separated projects. libusb-win32 is a Win
 
 === Binary Snapshots ===
 
-Pre-built binary snapshots are provided in the [http://sourceforge.net/projects/libusb/files/ Sourceforge files] directory along with the source code archive. Since 1.0.21 release, they are also in [https://github.com/libusb/libusb/releases github release page].<br/>
+Pre-built binary snapshots are provided in the [http://sourceforge.net/projects/libusb/files/ Sourceforge files] directory along with the source code archive. Since 1.0.21 release, they are also at the [https://github.com/libusb/libusb/releases GitHub release page].<br/>
 
 The pre-built Windows binaries are provided AS IS for your convenience, generated for the following environments:
 
-* Microsoft Visual Studio; MS32(32 bit) and MS64 (64 bit) directories
+* Microsoft Visual Studio; MS32 (32 bit) and MS64 (64 bit) directories
 * MinGW -> MinGW32 (32 bit) and MinGW64 (64 bit) directories. 
 
 Note that these archives are provided in the <code>7z</code> format so you may have to install ​[http://www.7-zip.org/ 7-zip].
@@ -33,23 +33,19 @@ You can download and install libusb using the vcpkg dependency manager:
 The libusb port in vcpkg is kept up to date by Microsoft team members and community contributors. If the version is out of date, please create an issue or pull request on the [https://github.com/Microsoft/vcpkg vcpkg] repository.
 
 ===msys2 MinGW-w64 32bit/64bit package ===
-msys2 has the [https://packages.msys2.org/base/mingw-w64-libusb libusb package]. Please contact msys2 project if you encountered issues with the msys2 package. It is recommended you use pkg-config (libusb-1.0.pc) if you use MSYS2 or other MinGW-w64 distributions. 
+msys2 has a [https://packages.msys2.org/base/mingw-w64-libusb libusb package]. Please contact the msys2 project if you encountered issues with the msys2 package. It is recommended to use pkg-config (libusb-1.0.pc) on MSYS2 or other MinGW-w64 distributions. 
 
 Reference: [https://github.com/libusb/libusb/issues/695 how to use libusb under MinGW-w64?]
 
 === Build from Source ===
 
-You may want to build from source if you encounter compatibility issues with the pre-built binary. We recommned either Visual Studio or MinGW-w64 based toolchain like MSYS2. 
+You may want to build from source if you encounter compatibility issues with the pre-built binaries. We recommend either Visual Studio or a MinGW-w64 based toolchain like MSYS2. 
 
-Take note MinGW.org toolchain is not supported. clang support patches are welcome. Patches to add support for other toolchains (including MinGW.org) may be accepted after review even though these toolchains are not officially supported. 
+Note that the MinGW.org toolchain is not supported. clang support patches are welcome. Patches to add support for other toolchains (including MinGW.org) may be accepted after review even though these toolchains are not officially supported. 
 
 == Supported Environments ==
 
-Supported systems are all Windows platforms, starting with Windows XP, and including 64 bit versions, with the following exceptions:
-* Windows 2003 (Microsoft does not support WinUSB on 32bit/64bit Windows 2003)
-* Windows XP 64 bit (Microsoft does not officially support WinUSB on 64bit Windows XP)
-
-Note: Windows XP support is dropped in libusb 1.0.24.
+Supported systems are all Windows platforms, starting with Windows Vista, and including 64 bit versions. Windows XP support was dropped in libusb 1.0.24.
 
 === USB 3.x Support ===
 
@@ -66,7 +62,7 @@ A <code>.NET</code> version of libusb, called [http://libusbdotnet.sourceforge.n
 If your target device is not HID, and your device is not using WinUSB driver, you '''must''' install a driver before you can communicate with it using libusb. Currently, this means installing one of Microsoft's <code>WinUSB</code>, [http://sourceforge.net/apps/trac/libusb-win32/wiki libusb-win32] or [http://libusbk.sourceforge.net/UsbK3/index.html libusbK] drivers. Two options are available:
 * '''Recommended''': Use the most recent version of '''[http://zadig.akeo.ie Zadig]''', an Automated Driver Installer GUI application for <code>WinUSB (recommended)</code>, <code>libusb-win32 (not working well, not recommended)</code> and <code>libusbK (only if you hit WinUSB limitations, and in case of isochronous transfer since the support of WinUSB isochronous transfer is not so mature yet)</code>.
 
-* For version 1.0.21 or later, you can also use usbdk backend. [https://cgit.freedesktop.org/spice/win32/usbdk usbdk] provides another driver option for libusb Windows backend. For 1.0.21, usbdk is a compile-time option, but it becomes a runtime option from version 1.0.22 onwards, so you need to specify the usbdk backend using something like the following.
+* For version 1.0.21 or later, you can also use the usbdk backend. [https://cgit.freedesktop.org/spice/win32/usbdk usbdk] provides another driver option for libusb Windows backend. For 1.0.21, usbdk is a compile-time option, but it becomes a runtime option from version 1.0.22 onwards, so you need to specify the usbdk backend using something like the following.
 ```
 libusb_context * ctx = NULL;
 libusb_init(&ctx);
