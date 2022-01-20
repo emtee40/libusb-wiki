@@ -91,6 +91,12 @@ When compiling from git, remember that you may have to run <code>./autogen.sh</c
 
 To create projects relying on '''libusb''', please refer to the samples in the <code>examples/</code> subdirectory.
 
+== Contributing ==
+
+Please submit a pull request (PR) at [https://github.com/libusb/libusb/pulls]. If you don't have any ready code yet, but want to suggest a new feature, you can file an issue at [https://github.com/libusb/libusb/issues].
+
+Once all feedback has been addressed and it is a change we want to include, we'll add your commit to libusb. Note that the pull request status will show up as “Closed” instead of “Merged” because of the way we merge contributions. Don't worry: you will still get author credit in the actual merged commit.
+
 = Open Source projects using libusb =
 
 * [http://openocd.sourceforge.net/ OpenOCD] and other [http://www.intra2net.com/en/developer/libftdi/ libFTDI] based projects
