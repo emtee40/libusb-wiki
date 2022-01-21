@@ -28,6 +28,7 @@ Note however that the scripts are smart enough to tell you if you forgot to crea
 * Run <tt>make distcheck</tt>
 * Run <tt>make docs-upload</tt> in the <tt>/doc</tt> directory
 * Test the release tarball
+* Create a detached signature (.asc file) with <tt>gpg -ab <tarball></tt>
 * Create the relevant directories at [https://sourceforge.net/projects/libusb/files/releases] and [https://github.com/libusb/libusb/releases] and upload the archives as well as Windows binary
 * Don't forget to push the RC/release commit, so that version.h and tags are updated in the public repo
 * If any bugs were pending actual release, close them
