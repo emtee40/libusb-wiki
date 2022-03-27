@@ -26,7 +26,7 @@ Note however that the scripts are smart enough to tell you if you forgot to crea
 * If a new <tt>.h</tt> was added, make sure it is listed in the relevant <tt>Makefile.am</tt>, else the tarball will not have it!
 * Run <tt>./autogen.sh</tt>
 * Run <tt>make distcheck</tt>
-* Run <tt>make docs-upload</tt> in the <tt>/doc</tt> directory
+* Run <tt>make docs-upload</tt> in the <tt>/doc</tt> directory (not for RC)
 * Test the release tarball
 * Create a detached signature (.asc file) with <tt>gpg -ab <tarball></tt>
 * Create the relevant directories at [https://sourceforge.net/projects/libusb/files/releases] and [https://github.com/libusb/libusb/releases] and upload the archives as well as Windows binary
