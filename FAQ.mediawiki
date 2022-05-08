@@ -69,14 +69,14 @@ You have to [https://lists.sourceforge.net/lists/listinfo/libusb-devel subscribe
 
 == Testing libusb ==
 
-=== How can I help testing libusb ===
+=== How can I help testing libusb? ===
 You can help in many ways.
 1) You can help testing the git head or RC release using the test matrix (eg: https://github.com/libusb/libusb/issues/1099)
 2) You can help testing using the downstream projects like libusb language bindings or projects using libusb
 3) You can help testing the pull requests.
 4) You can help contributing tests and examples to libusb projects.
 
-=== Do you have a list of known good devices to test libusb ===
+=== Do you have a list of known good devices to test libusb? ===
 Yes, you can use many devices to test libusb (ref: https://github.com/libusb/libusb/issues/1052).
 
 1) Highly recommended -- Cypress FX3 SuperSpeed Explorer Kit or other FX3 based boards
