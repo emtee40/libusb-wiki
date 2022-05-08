@@ -67,6 +67,43 @@ Please also read the Wiki pages including this FAQ page as well as [http://libus
 
 You have to [https://lists.sourceforge.net/lists/listinfo/libusb-devel subscribe] to the mailing list in order to post.
 
+== Testing libusb ==
+
+=== Do you have a list of known good devices to test libusb ===
+Yes, you can use many devices to test libusb (ref: https://github.com/libusb/libusb/issues/1052).
+
+1) Highly recommended -- Cypress FX3 SuperSpeed Explorer Kit or other FX3 based boards
+https://www.cypress.com/documentation/development-kitsboards/cyusb3kit-003-ez-usb-fx3-superspeed-explorer-kit
+
+2) Cypress FX2LP
+3) Arm Cortex M MCU based development board like ST STM32 (eg: Bluepill and Blackpill, Discovery or Nucleo boards), Microchip SAM MCU, Raspberry Pi Pico, etc
+4) Other USB MCU like Microhip PIC or AVR, TI MSP 430, etc
+5) Linux USB Gadget devices (eg: using Raspberry Pi Zero or Raspberry Pi 4B/400)
+6) libusb-1.0.26 has the umockdev based testing under Linux
+
+Other than vendor provided USB stacks (sometimes with proprietary licenses), there are also Opensource MCU USB stacks.
+
+1) tinyusb
+https://github.com/hathach/tinyusb
+
+2) cherryusb
+https://github.com/sakumisu/CherryUSB
+
+3) lufa
+https://github.com/abcminiuser/lufa
+
+4) m-stack for PIC16/18/24/32
+https://github.com/signal11/m-stack.git
+
+5) libusb_stm32
+https://github.com/dmitrystu/libusb_stm32.git
+
+6) PIC16/18 USB stack
+https://github.com/johnnydrazzi/USB-Stack
+
+7) fx2lib for EZUSB FX2LP
+https://github.com/djmuhlestein/fx2lib
+
 == Running libusb ==
 
 === Can I run libusb application on Linux when there is already a kernel driver attached to it? ===
