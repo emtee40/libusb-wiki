@@ -71,45 +71,29 @@ You have to [https://lists.sourceforge.net/lists/listinfo/libusb-devel subscribe
 
 === How can I help testing libusb? ===
 You can help in many ways.
-1) You can help testing the git head or RC release using the test matrix (eg: https://github.com/libusb/libusb/issues/1099)
-2) You can help testing using the downstream projects like libusb language bindings or projects using libusb
-3) You can help testing the pull requests.
-4) You can help contributing tests and examples to libusb projects.
+* You can help testing the git head or RC release using the test matrix (eg: https://github.com/libusb/libusb/issues/1099)
+* You can help testing using the downstream projects like libusb language bindings or projects using libusb
+* You can help testing the pull requests.
+* You can help contributing tests and examples to libusb projects.
 
 === Do you have a list of known good devices to test libusb? ===
 Yes, you can use many devices to test libusb (ref: https://github.com/libusb/libusb/issues/1052).
-
-1) Highly recommended -- Cypress FX3 SuperSpeed Explorer Kit or other FX3 based boards
-https://www.cypress.com/documentation/development-kitsboards/cyusb3kit-003-ez-usb-fx3-superspeed-explorer-kit
-
-2) Cypress FX2LP
-3) Arm Cortex M MCU based development board like ST STM32 (eg: Bluepill and Blackpill, Discovery or Nucleo boards), Microchip SAM MCU, Raspberry Pi Pico, etc
-4) Other USB MCU like Microhip PIC or AVR, TI MSP 430, etc
-5) Linux USB Gadget devices (eg: using Raspberry Pi Zero or Raspberry Pi 4B/400)
-6) libusb-1.0.26 has the umockdev based testing under Linux
+* Highly recommended -- Cypress FX3 SuperSpeed Explorer Kit or other FX3 based boards https://www.cypress.com/documentation/development-kitsboards/cyusb3kit-003-ez-usb-fx3-superspeed-explorer-kit
+* Cypress FX2LP
+* Arm Cortex M MCU based development board like ST STM32 (eg: Bluepill and Blackpill, Discovery or Nucleo boards), Microchip SAM MCU, Raspberry Pi Pico, etc
+* Other USB MCU like Microhip PIC or AVR, TI MSP 430, etc
+* Linux USB Gadget devices (eg: using Raspberry Pi Zero or Raspberry Pi 4B/400)
+* libusb-1.0.26 has the umockdev based testing under Linux
 
 Other than vendor provided USB stacks (sometimes with proprietary licenses), there are also Opensource MCU USB stacks.
-
-1) tinyusb
-https://github.com/hathach/tinyusb
-
-2) cherryusb
-https://github.com/sakumisu/CherryUSB
-
-3) lufa
-https://github.com/abcminiuser/lufa
-
-4) m-stack for PIC16/18/24/32
-https://github.com/signal11/m-stack.git
-
-5) libusb_stm32
-https://github.com/dmitrystu/libusb_stm32.git
-
-6) PIC16/18 USB stack
-https://github.com/johnnydrazzi/USB-Stack
-
-7) fx2lib for EZUSB FX2LP
-https://github.com/djmuhlestein/fx2lib
+* tinyusb - https://github.com/hathach/tinyusb
+* cherryusb - https://github.com/sakumisu/CherryUSB
+* lufa - https://github.com/abcminiuser/lufa
+* m-stack for PIC16/18/24/32 - https://github.com/signal11/m-stack.git
+* libopencm3 for ARM Cortex-M3 - http://libopencm3.org/
+* libusb_stm32 - https://github.com/dmitrystu/libusb_stm32.git
+* PIC16/18 USB stack - https://github.com/johnnydrazzi/USB-Stack
+* fx2lib for EZUSB FX2LP - https://github.com/djmuhlestein/fx2lib
 
 == Running libusb ==
 
