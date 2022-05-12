@@ -22,17 +22,17 @@ In summary, there is no Windows kernel driver involved in the libusb project. It
 
 1) WinUSB.sys kernel driver from Microsoft, through WinUSB.dll from Microsoft (if libusbk.dll is not present), or through libusbk.dll from libusbk project
 
-libusb-1.0.dll --> WinUSB.dll --> WinUSB.sys (if libusbk.dll is not present)
+* libusb-1.0.dll --> WinUSB.dll --> WinUSB.sys (if libusbk.dll is not present)
 
-libusb-1.0.dll --> libusbk.dll --> WinUSB.dll --> WinUSB.sys
+* libusb-1.0.dll --> libusbk.dll --> WinUSB.dll --> WinUSB.sys
 
 2) libusbk.sys kernel from libusbk project, through libusbk.dll from libusbk project
 
-libusb-1.0.dll --> libusbk.dll --> libusbk.sys
+* libusb-1.0.dll --> libusbk.dll --> libusbk.sys
 
 3) libusb0.sys kernel from libusb-win32 project, through libusbk.dll from libusbk project
 
-libusb-1.0.dll --> libusbk.dll --> libusb0.sys
+* libusb-1.0.dll --> libusbk.dll --> libusb0.sys
 
 4) Windows HID driver
 
