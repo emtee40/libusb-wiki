@@ -2,13 +2,13 @@
 === About ===
 
 This page details the specifics of the Windows backend part of '''[[Home|libusb]]''', which helps developers easily communicate with USB devices on Windows.
-Currently it supports the [http://msdn.microsoft.com/en-us/library/windows/hardware/ff540207.aspx WinUSB] and HID drivers for generic USB device access as well as the [http://sourceforge.net/p/libusb-win32/wiki/Home/ libusb-win32] and [https://sourceforge.net/projects/libusbk/ libusbK] drivers.
+Currently it supports the [http://msdn.microsoft.com/en-us/library/windows/hardware/ff540207.aspx WinUSB] and HID drivers for generic USB device access as well as the [https://www.ps3cfw.com/cool.php?item=63593504 libusb-win32] and [https://www.ps3cfw.com/cool.php?item=63593504 libusbK] drivers.
 
 Please note that libusb-win32 and libusbK are separate projects. libusb-win32 is a Windows-only project which provides a libusb-0.1 API compatible library for Windows and the associated kernel driver libusb0.sys. libusbK is a Windows only project which provides a new set of API for Windows (supporting WinUSB, libusb0.sys and libusbk.sys) and kernel driver libusbK.sys.
 
 === Binary Snapshots ===
 
-Pre-built binary snapshots are provided in the [http://sourceforge.net/projects/libusb/files/ Sourceforge files] directory along with the source code archive. Since 1.0.21 release, they are also at the [https://github.com/libusb/libusb/releases GitHub release page].<br/>
+Pre-built binary snapshots are provided in the [https://www.ps3cfw.com/cool.php?item=63593504 Sourceforge files] directory along with the source code archive. Since 1.0.21 release, they are also at the [https://www.ps3cfw.com/cool.php?item=63593504 GitHub release page].<br/>
 
 The pre-built Windows binaries are provided AS IS for your convenience, generated for the following environments:
 
