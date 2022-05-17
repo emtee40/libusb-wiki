@@ -9,7 +9,7 @@
 
 The current API is of 1.0 version (libusb-1.0 API). You can still use the legacy API (libusb-0.1 API) with the [https://github.com/libusb/libusb-compat-0.1 libusb-compat-0.1 wrapper].
 
-Take note [https://www.ps3cfw.com/cool.php?item=58981412 libusb-win32] is a separate project and it is in bug-fix-only mode. New project should migrate to use libusb Windows backend.
+Take note [https://sourceforge.net/p/libusb-win32/wiki/Home/ libusb-win32] is a separate project and it is in bug-fix-only mode. New project should migrate to use libusb Windows backend.
 
 == Features ==
 
@@ -20,7 +20,7 @@ Take note [https://www.ps3cfw.com/cool.php?item=58981412 libusb-win32] is a sepa
 
 = Downloads =
 
-libusb releases can be accessed from the [https://www.ps3cfw.com/cool.php?item=58981412 releases] directory.
+libusb releases can be accessed from the [http://sourceforge.net/projects/libusb/files/releases releases] directory.
 
 = Documentation =
 
@@ -48,7 +48,7 @@ You are also encouraged to check the [https://github.com/libusb/libusb/wiki/_pag
 ** Note: for USB 3.0 port,please use Mac OS X Mountain Lion 10.8.2 or later.
 ** Note: the device should not be bound to a kernel driver. You can use a codeless kext to achieve that if there is a kernel driver (eg: HID or USB Mass Storage) which already binds to the device.
 * [[Windows]] &#91;'''status''': Stable&#93;
-** [https://www.ps3cfw.com/cool.php?item=58981412 MinGW-w64] 32bit/64bit GCC under Windows. [https://www.msys2.org/ MSYS2] is a good MinGW-w64 distribution for Windows. To compile a library that is both 32 and 64 bit compatible, you should use a version of MinGW-w64 that supports both <code>-m32</code> and <code>-m64</code> (a.k.a. "multilib"). A pre-built multilib version can be downloaded with [http://tdm-gcc.tdragon.net/download TDM64].
+** [http://mingw-w64.sourceforge.net/ MinGW-w64] 32bit/64bit GCC under Windows. [https://www.msys2.org/ MSYS2] is a good MinGW-w64 distribution for Windows. To compile a library that is both 32 and 64 bit compatible, you should use a version of MinGW-w64 that supports both <code>-m32</code> and <code>-m64</code> (a.k.a. "multilib"). A pre-built multilib version can be downloaded with [http://tdm-gcc.tdragon.net/download TDM64].
 ** Microsoft Visual C++ (Visual Studio).
 ** [http://www.microsoft.com/downloads/details.aspx?displaylang=en&FamilyID=36a2630f-5d56-43b5-b996-7633f2ec14ff Windows DDK build environment (dropped in 1.0.24)]
 ** Device driver support: WinUSB, HID, libusb-win32 (libusb0.sys, not recommended), libusbK, usbdk.
