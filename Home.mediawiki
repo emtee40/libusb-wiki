@@ -61,6 +61,9 @@ You are also encouraged to check the [https://github.com/libusb/libusb/wiki/_pag
 
 * Haiku support was added in libusb-1.0.20
 
+* WebAssembly + [https://en.wikipedia.org/wiki/WebUSB WebUSB] support &#91;'''status''': EXPERIMENTAL&#93;
+** Note: WebAssembly support requires custom toolchain (Emscripten) and linker flags to be used for building your application and has some limitations compared to other platforms. For more details, see [https://web.dev/porting-libusb-to-webusb/#using-the-port the accompanying blog post].
+
 More information on the Windows implementation can be obtained from the '''[[Windows|Windows Backend]]''' page.
 
 Note: FreeBSD 8 and above include a FreeBSD-specific reimplementation of the libusb API, so your applications will probably work there too. The source code for this library can be found [http://svn.freebsd.org/viewvc/base/head/lib/libusb/ here].
